@@ -33,5 +33,117 @@
     "alt": "Gráfico de torta: razones por las que quiero que llegue Julio. 99% memes de Julio Iglesias, 1% vacaciones",
     "minDays": 1,
     "maxDays": 365
+  },
+  {
+    "id": "nada-como-julio",
+    "file": "countdown/nada-como-julio.webp",
+    "alt": "Julio Iglesias en una pileta. Texto: Llega Junio, pero nada como Julio",
+    "minDays": 1,
+    "maxDays": 365
+  },
+  {
+    "id": "ya-casi-se-ve-julio",
+    "file": "countdown/ya-casi-se-ve-julio.webp",
+    "alt": "Julio Iglesias borroso y desenfocado. Texto: Ya casi se ve Julio",
+    "minDays": 1,
+    "maxDays": 60
+  },
+  {
+    "id": "julio-sea-cerca",
+    "file": "countdown/julio-sea-cerca.webp",
+    "alt": "Julio Iglesias asomándose detrás de una cerca de madera. Texto: Que bueno que julio sea cerca",
+    "minDays": 1,
+    "maxDays": 30
+  },
+  {
+    "id": "julio-se-asoma-a-lo-lejos",
+    "file": "countdown/julio-se-asoma-a-lo-lejos.webp",
+    "alt": "Julio Iglesias asomándose en el horizonte de una larga ruta recta en el desierto. Texto: Julio se asoma a lo lejos",
+    "minDays": 1,
+    "maxDays": 90
+  },
+  {
+    "id": "julio-mantenga-la-llama",
+    "file": "countdown/julio-mantenga-la-llama.webp",
+    "alt": "Julio Iglesias como doctor atendiendo a una llama en una camilla. Texto: Esperemos que Julio mantenga viva la llama",
+    "minDays": 1,
+    "maxDays": 365
+  },
+  {
+    "id": "pronto-entrando-en-julio",
+    "file": "countdown/pronto-entrando-en-julio.webp",
+    "alt": "Julio Iglesias como paciente con un doctor poniéndose guantes. Texto: Pronto estaremos entrando en Julio",
+    "minDays": 1,
+    "maxDays": 30
+  },
+  {
+    "id": "la-previa-de-julio",
+    "file": "countdown/la-previa-de-julio.webp",
+    "alt": "Julio Iglesias con cerveza y vino tinto en un avión privado. Texto: La previa de Julio",
+    "minDays": 1,
+    "maxDays": 30
+  },
+  {
+    "id": "tratando-de-llegar-a-julio",
+    "file": "countdown/tratando-de-llegar-a-julio.webp",
+    "alt": "Fans intentando tocar a Julio Iglesias en un concierto. Texto: Tratando de llegar a Julio",
+    "minDays": 1,
+    "maxDays": 60
+  },
+  {
+    "id": "no-es-julio-pero-tiene-aire",
+    "file": "countdown/no-es-julio-pero-tiene-aire.webp",
+    "alt": "Julio Iglesias de traje blanco junto a un aire acondicionado. Texto: No es Julio pero tiene un aire",
+    "minDays": 1,
+    "maxDays": 365
+  },
+  {
+    "id": "solo-falta-messi-julio",
+    "file": "countdown/solo-falta-messi-julio.webp",
+    "alt": "Dos fotos de Messi seguidas de Julio Iglesias. Texto: Solo falta (Messi Messi) para (Julio)",
+    "minDays": 1,
+    "maxDays": 30
+  },
+  {
+    "id": "pronto-cae-julio",
+    "file": "countdown/pronto-cae-julio.webp",
+    "alt": "Julio Iglesias colgando del borde de un precipicio en el Gran Cañón. Texto: Pronto cae Julio",
+    "minDays": 1,
+    "maxDays": 60
+  },
+  {
+    "id": "julio-cargado-de-emociones",
+    "file": "countdown/julio-cargado-de-emociones.webp",
+    "alt": "Julio Iglesias empujando una carretilla con personajes de Intensamente. Texto: Julio viene cargado de emociones",
+    "minDays": 1,
+    "maxDays": 30
+  },
+  {
+    "id": "julio-esta-demorado",
+    "file": "countdown/julio-esta-demorado.webp",
+    "alt": "Julio Iglesias con traje púrpura sonriendo. Texto: Julio está demorado",
+    "minDays": 1,
+    "maxDays": 30
+  },
+  {
+    "id": "julio-punto-de-arrancar",
+    "file": "countdown/julio-punto-de-arrancar.webp",
+    "alt": "Julio Iglesias joven junto a un auto retro en foto blanco y negro. Texto: Julio ya está a punto de arrancar",
+    "minDays": 1,
+    "maxDays": 7
+  },
+  {
+    "id": "no-queda-nada-para-julio",
+    "file": "countdown/no-queda-nada-para-julio.webp",
+    "alt": "Julio Iglesias triste mirando dentro de una heladera vacía. Texto: No queda nada para Julio",
+    "minDays": 1,
+    "maxDays": 7
+  },
+  {
+    "id": "esta-llegando-julio-impresion",
+    "file": "countdown/esta-llegando-julio-impresion.webp",
+    "alt": "Julio Iglesias saliendo impreso de una impresora grande. Texto: Está llegando Julio o es mi impresión?",
+    "minDays": 1,
+    "maxDays": 30
   }
 ]
