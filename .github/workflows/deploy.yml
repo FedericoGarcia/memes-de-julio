@@ -31,22 +31,23 @@ jobs:
           mkdir -p _site/images
 
           # Minify JS
-          terser script.js -o _site/script.js --compress --mangle
+          terser src/script.js -o _site/script.js --compress --mangle
 
           # Minify CSS
-          csso style.css -o _site/style.css
+          csso src/style.css -o _site/style.css
 
           # Minify JSON
           for f in memes.json countdown.json specials.json; do
-            python3 -c "import json,sys;json.dump(json.load(open('$f')),sys.stdout,separators=(',',':'))" > _site/$f
+            python3 -c "import json,sys;json.dump(json.load(open('src/$f')),sys.stdout,separators=(',',':'))" > _site/$f
           done
 
           # Copy static files as-is
-          cp index.html 404.html _site/
-          cp robots.txt sitemap.xml llms.txt _site/
-          cp favicon.svg og-image.png _site/
-          cp site.webmanifest CNAME _site/
-          cp -r images/ _site/images/
+          cp src/index.html src/404.html _site/
+          cp src/robots.txt src/sitemap.xml src/llms.txt _site/
+          cp src/favicon.svg src/og-image.png _site/
+          cp src/site.webmanifest _site/
+          cp CNAME _site/
+          cp -r src/images/ _site/images/
 
       - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
         with:
