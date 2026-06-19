@@ -208,18 +208,22 @@
       div.appendChild(emoji);
     }
 
+    var info = document.createElement("div");
+    info.className = "countdown-info";
+
     var number = document.createElement("div");
     number.className = "countdown-number";
-    div.appendChild(number);
+    info.appendChild(number);
     animateNumber(number, days);
 
     var label = document.createElement("div");
     label.className = "countdown-label";
     label.textContent = days === 1 ? "día para julio" : "días para julio";
-    div.appendChild(label);
+    info.appendChild(label);
 
-    div.appendChild(createGenericActions());
+    info.appendChild(createGenericActions());
 
+    div.appendChild(info);
     container.appendChild(div);
   }
 
