@@ -1,9 +1,44 @@
 [
   {
+    "id": "por-fin-arranco",
+    "file": "por-fin-arranco.jpeg",
+    "alt": "Julio Iglesias asomándose desde un Fiat Uno empujado a mano. Texto: Por fin arrancó el uno de Julio",
+    "from": 1,
+    "to": 1
+  },
+  {
+    "id": "rey-de-los-hunos",
+    "file": "rey-de-los-hunos.jpeg",
+    "alt": "Julio Iglesias vestido de guerrero bárbaro con casco y lanza. Texto: El rey de los hunos... de Julio",
+    "from": 1,
+    "to": 1
+  },
+  {
     "id": "julio-entero",
     "file": "julio-entero.png",
     "alt": "Julio Iglesias montado en un tero en un bosque nevado con texto: Uff que frío hace! Y pensar que aún nos falta julio en-tero",
     "from": 1,
     "to": 5
+  },
+  {
+    "id": "dos-de-julio",
+    "file": "dos-de-julio.jpeg",
+    "alt": "Julio Iglesias sonriendo junto a una PC retro con MS-DOS. Texto: El D.O.S. de Julio",
+    "from": 2,
+    "to": 2
+  },
+  {
+    "id": "dos-de-julio-hijos",
+    "file": "dos-de-julio-hijos.jpeg",
+    "alt": "Julio Iglesias joven abrazando a sus dos hijos. Texto: 2 de Julio",
+    "from": 2,
+    "to": 2
+  },
+  {
+    "id": "veo-mal-o-es",
+    "file": "veo-mal-o-es.jpeg",
+    "alt": "Julio Iglesias de traje señalando con gesto pícaro. Texto: Veo mal? O es... 2 de Julio",
+    "from": 2,
+    "to": 2
   }
 ]
