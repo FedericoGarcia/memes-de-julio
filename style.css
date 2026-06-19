@@ -159,10 +159,12 @@ main {
   font-weight: 700;
 }
 
-.noscript-msg {
-  font-size: 1.2rem;
-  color: var(--text-muted);
+.noscript-content {
   text-align: center;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 480px;
 }
 
 footer {

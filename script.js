@@ -58,9 +58,10 @@
     img.className = "meme-image";
     img.src = "images/" + meme.file;
     img.alt = meme.alt;
-    img.loading = "eager";
     img.width = 600;
     img.height = 600;
+    img.setAttribute("fetchpriority", "high");
+    img.decoding = "async";
     div.appendChild(img);
 
     var actions = document.createElement("div");
@@ -68,6 +69,7 @@
 
     var shuffleBtn = document.createElement("button");
     shuffleBtn.className = "btn";
+    shuffleBtn.setAttribute("aria-label", "Cargar otro meme al azar");
     shuffleBtn.textContent = "🔀 Otro meme";
     shuffleBtn.addEventListener("click", function () {
       window.location.href = window.location.pathname;
@@ -78,6 +80,7 @@
 
     var shareBtn = document.createElement("button");
     shareBtn.className = "btn";
+    shareBtn.setAttribute("aria-label", "Copiar enlace directo a este meme");
     shareBtn.textContent = "🔗 Copiar link";
     shareBtn.addEventListener("click", function () {
       copyToClipboard(shareUrl);

@@ -1,0 +1,20 @@
+# Memes de Julio
+
+> A fun Spanish-language website that shows a new meme every day during July. The rest of the year, it displays a countdown to the next July 1st.
+
+## About
+
+- The site is in Argentine Spanish (es-AR)
+- During July (days 1-31), visitors see a randomly selected meme for that day
+- Outside July, visitors see a countdown showing days remaining until July 1st
+- After July ends (August-December), a "see you next year" message is shown
+- Each meme can be shared via a direct link using the `?id=` query parameter
+
+## Content
+
+- [Home](https://memesdejulio.com.ar/): Main page with daily meme or countdown
+- [Meme Catalog](https://memesdejulio.com.ar/memes.json): JSON catalog of all 31 days of memes with alt text
+
+## Contact
+
+- Email: memes@memesdejulio.com.ar

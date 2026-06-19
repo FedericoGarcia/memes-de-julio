@@ -1,0 +1,12 @@
+{
+  "name": "Memes de Julio",
+  "short_name": "Memes de Julio",
+  "description": "Un meme nuevo cada día de julio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f0f",
+  "theme_color": "#0f0f0f",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

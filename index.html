@@ -3,13 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Memes de Julio</title>
+
+    <title>Memes de Julio | Un meme nuevo cada día de julio</title>
     <meta
       name="description"
-      content="Un meme nuevo cada día de julio. Volvé todos los días para ver qué te toca."
+      content="Un meme nuevo cada día de julio. Volvé todos los días para ver qué te toca. Cuenta regresiva el resto del año."
     />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://memesdejulio.com.ar/" />
+
+    <meta http-equiv="content-language" content="es-AR" />
+    <link
+      rel="alternate"
+      hreflang="es-AR"
+      href="https://memesdejulio.com.ar/"
+    />
+    <link rel="alternate" hreflang="es" href="https://memesdejulio.com.ar/" />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://memesdejulio.com.ar/"
+    />
+
+    <meta name="theme-color" content="#0f0f0f" />
+    <meta name="color-scheme" content="dark light" />
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://memesdejulio.com.ar/" />
@@ -22,29 +39,80 @@
       property="og:image"
       content="https://memesdejulio.com.ar/og-image.png"
     />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Memes de Julio — un meme nuevo cada día de julio"
+    />
     <meta property="og:locale" content="es_AR" />
+    <meta property="og:site_name" content="Memes de Julio" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Memes de Julio" />
     <meta
       name="twitter:description"
-      content="Un meme nuevo cada día de julio. Volvé todos los días para ver qué te toca."
+      content="Un meme nuevo cada día de julio."
     />
     <meta
       name="twitter:image"
       content="https://memesdejulio.com.ar/og-image.png"
     />
+    <meta
+      name="twitter:image:alt"
+      content="Memes de Julio — un meme nuevo cada día de julio"
+    />
 
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📅</text></svg>" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="preload" href="memes.json" as="fetch" crossorigin />
     <link rel="stylesheet" href="style.css" />
+
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'"
+    />
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Memes de Julio",
-        "url": "https://memesdejulio.com.ar/",
-        "description": "Un meme nuevo cada día de julio. Volvé todos los días para ver qué te toca."
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://memesdejulio.com.ar/#website",
+            "name": "Memes de Julio",
+            "url": "https://memesdejulio.com.ar/",
+            "description": "Un meme nuevo cada día de julio. Cuenta regresiva el resto del año.",
+            "inLanguage": "es-AR"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://memesdejulio.com.ar/",
+            "url": "https://memesdejulio.com.ar/",
+            "name": "Memes de Julio",
+            "description": "Un meme nuevo cada día de julio. Volvé todos los días para ver qué te toca.",
+            "isPartOf": {
+              "@id": "https://memesdejulio.com.ar/#website"
+            },
+            "inLanguage": "es-AR",
+            "about": {
+              "@type": "Thing",
+              "name": "Internet memes",
+              "sameAs": "https://en.wikipedia.org/wiki/Internet_meme"
+            }
+          },
+          {
+            "@type": "ImageGallery",
+            "name": "Memes de Julio",
+            "description": "Colección de memes, uno nuevo por cada día de julio",
+            "url": "https://memesdejulio.com.ar/",
+            "inLanguage": "es-AR",
+            "numberOfItems": 31,
+            "genre": "humor"
+          }
+        ]
       }
     </script>
   </head>
@@ -53,11 +121,16 @@
       <h1><a href="/">Memes de Julio</a></h1>
     </header>
 
-    <main id="content">
+    <main id="content" aria-live="polite">
       <noscript>
-        <p class="noscript-msg">
-          Necesitás tener JavaScript habilitado para ver los memes.
-        </p>
+        <div class="noscript-content">
+          <p>
+            Memes de Julio es un sitio que muestra un meme nuevo cada día de
+            julio. El resto del año muestra una cuenta regresiva hasta el
+            próximo 1 de julio. Necesitás tener JavaScript habilitado para ver
+            los memes.
+          </p>
+        </div>
       </noscript>
     </main>
 
@@ -68,6 +141,6 @@
       </p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
