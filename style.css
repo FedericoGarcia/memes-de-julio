@@ -163,6 +163,9 @@ main {
   letter-spacing: -0.04em;
   color: var(--accent);
   line-height: 1;
+  min-width: 3ch;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
 }
 
 .countdown-label {
