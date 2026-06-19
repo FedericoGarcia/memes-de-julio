@@ -309,6 +309,10 @@ footer a:hover {
     gap: 2rem;
   }
 
+  .countdown-info {
+    flex: 1;
+    min-width: 0;
+  }
 
   .countdown-image {
     max-height: 70vh;
