@@ -45,6 +45,19 @@
     }
   }
 
+  function memesForDay(catalog, day) {
+    return catalog.filter(function (meme) {
+      return day >= meme.from && day <= meme.to;
+    });
+  }
+
+  function findMemeById(catalog, id) {
+    for (var i = 0; i < catalog.length; i++) {
+      if (catalog[i].id === id) return catalog[i];
+    }
+    return null;
+  }
+
   function renderMeme(container, meme, day) {
     var div = document.createElement("div");
     div.className = "meme-container";
@@ -134,19 +147,6 @@
     container.appendChild(div);
   }
 
-  function findMemeById(catalog, id) {
-    var days = Object.keys(catalog);
-    for (var i = 0; i < days.length; i++) {
-      var memes = catalog[days[i]];
-      for (var j = 0; j < memes.length; j++) {
-        if (memes[j].id === id) {
-          return { meme: memes[j], day: parseInt(days[i], 10) };
-        }
-      }
-    }
-    return null;
-  }
-
   function init() {
     var content = document.getElementById("content");
 
@@ -159,7 +159,8 @@
         if (requestedId) {
           var match = findMemeById(catalog, requestedId);
           if (match) {
-            renderMeme(content, match.meme, match.day);
+            var now = getEffectiveDate();
+            renderMeme(content, match, now.getMonth() === JULY ? now.getDate() : match.from);
             return;
           }
         }
@@ -169,13 +170,11 @@
         var day = now.getDate();
 
         if (month === JULY) {
-          var dayKey = String(day);
-          var memes = catalog[dayKey];
-          if (memes && memes.length > 0) {
-            var meme = pickRandom(memes);
-            renderMeme(content, meme, day);
+          var available = memesForDay(catalog, day);
+          if (available.length > 0) {
+            renderMeme(content, pickRandom(available), day);
           } else {
-            renderMeme(content, { file: "", alt: "Sin meme para hoy", id: "empty" }, day);
+            renderMeme(content, { file: "", alt: "Sin meme para hoy", id: "empty", from: day, to: day }, day);
           }
         } else if (month > JULY) {
           renderSeeYou(content);
