@@ -1,7 +1,7 @@
 [
   {
     "id": "en-3-meses-llega-julio",
-    "file": "countdown/en-3-meses-llega-julio.jpg",
+    "file": "countdown/en-3-meses-llega-julio.webp",
     "alt": "Ecografía con la cara de Julio Iglesias. Texto: En menos de 3 meses llega Julio",
     "minDays": 1,
     "maxDays": 90
@@ -15,21 +15,21 @@
   },
   {
     "id": "julio-se-viene-con-todo",
-    "file": "countdown/julio-se-viene-con-todo.png",
+    "file": "countdown/julio-se-viene-con-todo.webp",
     "alt": "Julio Iglesias en una bicicleta sobrecargada de equipaje. Texto: Julio se viene con todo",
     "minDays": 1,
     "maxDays": 60
   },
   {
     "id": "ahi-viene",
-    "file": "countdown/ahi-viene.jpg",
+    "file": "countdown/ahi-viene.webp",
     "alt": "Avalancha de caras de Julio Iglesias acercándose como tormenta de arena mientras alguien huye. Texto: Ahí viene",
     "minDays": 1,
     "maxDays": 30
   },
   {
     "id": "razones-julio",
-    "file": "countdown/razones-julio.jpg",
+    "file": "countdown/razones-julio.webp",
     "alt": "Gráfico de torta: razones por las que quiero que llegue Julio. 99% memes de Julio Iglesias, 1% vacaciones",
     "minDays": 1,
     "maxDays": 365
