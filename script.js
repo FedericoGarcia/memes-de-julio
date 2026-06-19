@@ -72,11 +72,12 @@
 
   function createImage(src, alt, cssClass) {
     var img = document.createElement("img");
-    img.className = cssClass;
-    img.src = src;
+    img.className = cssClass + " fade-in";
     img.alt = alt;
     img.setAttribute("fetchpriority", "high");
     img.decoding = "async";
+    img.addEventListener("load", function () { img.classList.add("loaded"); });
+    img.src = src;
     return img;
   }
 
@@ -95,18 +96,67 @@
 
     var shareUrl = window.location.origin + window.location.pathname + "?id=" + encodeURIComponent(meme.id);
 
-    var shareBtn = document.createElement("button");
-    shareBtn.className = "btn";
-    shareBtn.setAttribute("aria-label", "Copiar enlace directo a este meme");
-    shareBtn.textContent = "🔗 Copiar link";
-    shareBtn.addEventListener("click", function () {
+    if (navigator.share) {
+      var nativeShareBtn = document.createElement("button");
+      nativeShareBtn.className = "btn";
+      nativeShareBtn.setAttribute("aria-label", "Compartir este meme");
+      nativeShareBtn.textContent = "📤 Compartir";
+      nativeShareBtn.addEventListener("click", function () {
+        navigator.share({ title: "Memes de Julio", url: shareUrl });
+      });
+      actions.appendChild(nativeShareBtn);
+    }
+
+    var copyBtn = document.createElement("button");
+    copyBtn.className = "btn";
+    copyBtn.setAttribute("aria-label", "Copiar enlace directo a este meme");
+    copyBtn.textContent = "🔗 Copiar link";
+    copyBtn.addEventListener("click", function () {
       if (navigator.clipboard) navigator.clipboard.writeText(shareUrl);
-      shareBtn.textContent = "✅ Copiado";
-      setTimeout(function () { shareBtn.textContent = "🔗 Copiar link"; }, 2000);
+      copyBtn.textContent = "✅ Copiado";
+      setTimeout(function () { copyBtn.textContent = "🔗 Copiar link"; }, 2000);
     });
-    actions.appendChild(shareBtn);
+    actions.appendChild(copyBtn);
 
     return actions;
+  }
+
+  // --- Animated countdown ---
+
+  function animateNumber(el, target) {
+    var duration = 800;
+    var start = performance.now();
+    var from = Math.min(target + 20, 365);
+
+    function tick(now) {
+      var t = Math.min((now - start) / duration, 1);
+      var eased = 1 - Math.pow(1 - t, 3);
+      el.textContent = Math.round(from + (target - from) * eased);
+      if (t < 1) requestAnimationFrame(tick);
+    }
+
+    requestAnimationFrame(tick);
+  }
+
+  // --- Swipe support ---
+
+  function enableSwipe(container, onSwipe) {
+    var startX = 0;
+    var startY = 0;
+    var threshold = 50;
+
+    container.addEventListener("touchstart", function (e) {
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+    }, { passive: true });
+
+    container.addEventListener("touchend", function (e) {
+      var dx = e.changedTouches[0].clientX - startX;
+      var dy = e.changedTouches[0].clientY - startY;
+      if (Math.abs(dx) > threshold && Math.abs(dx) > Math.abs(dy)) {
+        onSwipe(dx > 0 ? "right" : "left");
+      }
+    }, { passive: true });
   }
 
   // --- Renderers ---
@@ -142,8 +192,8 @@
 
     var number = document.createElement("div");
     number.className = "countdown-number";
-    number.textContent = days;
     div.appendChild(number);
+    animateNumber(number, days);
 
     var label = document.createElement("div");
     label.className = "countdown-label";
@@ -227,14 +277,19 @@
   function render(container, state) {
     container.innerHTML = "";
     switch (state.type) {
-      case "meme":     return renderMeme(container, state.meme, state.day, state.year);
-      case "special":  return renderSpecial(container, state.special);
+      case "meme":      return renderMeme(container, state.meme, state.day, state.year);
+      case "special":   return renderSpecial(container, state.special);
       case "countdown": return renderCountdown(container, state.days, state.catalog);
-      case "see-you":  return renderSeeYou(container);
+      case "see-you":   return renderSeeYou(container);
     }
   }
 
   loadCatalogs().then(function (catalogs) {
-    render(document.getElementById("content"), resolveState(catalogs));
+    var content = document.getElementById("content");
+    render(content, resolveState(catalogs));
+
+    enableSwipe(content, function () {
+      window.location.href = window.location.pathname;
+    });
   });
 })();
