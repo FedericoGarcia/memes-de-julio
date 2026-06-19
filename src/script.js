@@ -31,7 +31,21 @@
   }
 
   function pickRandom(arr) {
-    return arr[Math.floor(Math.random() * arr.length)];
+    if (arr.length <= 1) return arr[0];
+    try {
+      var seen = JSON.parse(sessionStorage.getItem("seen") || "[]");
+      var unseen = arr.filter(function (m) { return seen.indexOf(m.id) === -1; });
+      if (unseen.length === 0) {
+        seen = [];
+        unseen = arr;
+      }
+      var pick = unseen[Math.floor(Math.random() * unseen.length)];
+      seen.push(pick.id);
+      sessionStorage.setItem("seen", JSON.stringify(seen));
+      return pick;
+    } catch (e) {
+      return arr[Math.floor(Math.random() * arr.length)];
+    }
   }
 
   // --- Catalog filters ---
