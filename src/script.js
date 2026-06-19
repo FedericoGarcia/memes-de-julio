@@ -36,8 +36,9 @@
       var seen = JSON.parse(sessionStorage.getItem("seen") || "[]");
       var unseen = arr.filter(function (m) { return seen.indexOf(m.id) === -1; });
       if (unseen.length === 0) {
-        seen = [];
-        unseen = arr;
+        var last = seen[seen.length - 1];
+        seen = last ? [last] : [];
+        unseen = arr.filter(function (m) { return m.id !== last; });
       }
       var pick = unseen[Math.floor(Math.random() * unseen.length)];
       seen.push(pick.id);
