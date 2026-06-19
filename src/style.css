@@ -316,7 +316,8 @@ footer a:hover {
 
   .countdown-image {
     max-height: 70vh;
-    max-width: 50%;
+    width: 50%;
     flex-shrink: 0;
+    object-fit: contain;
   }
 }
