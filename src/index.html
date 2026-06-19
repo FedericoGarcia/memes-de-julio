@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="es-AR">
   <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NZ8RKQ78');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -70,11 +78,12 @@
     <link rel="preload" href="memes.json" as="fetch" crossorigin />
     <link rel="preload" href="countdown.json" as="fetch" crossorigin />
     <link rel="preload" href="specials.json" as="fetch" crossorigin />
+    <link rel="preload" href="generic.json" as="fetch" crossorigin />
     <link rel="stylesheet" href="style.css" />
 
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; img-src 'self' data:; script-src 'self' https://static.cloudflareinsights.com; style-src 'self'"
+      content="default-src 'self'; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com; frame-src https://www.googletagmanager.com; style-src 'self'"
     />
 
     <script type="application/ld+json">
@@ -126,6 +135,11 @@
     </script>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZ8RKQ78"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <header>
       <h1><a href="/">Memes de Julio</a></h1>
     </header>
@@ -145,6 +159,7 @@
     </main>
 
     <footer>
+      <nav><a href="?view=galeria">Galería</a></nav>
       <p>
         ¿Tenés un meme para sugerir?
         <a href="mailto:memes@memesdejulio.com.ar">memes@memesdejulio.com.ar</a>

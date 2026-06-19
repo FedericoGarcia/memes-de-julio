@@ -19,6 +19,7 @@ src/                        # Source files (readable)
 ├── memes.json              # July memes catalog (array with date ranges)
 ├── countdown.json          # Countdown images catalog (minDays/maxDays)
 ├── specials.json            # Special date easter eggs (month/from/to)
+├── generic.json            # Generic memes shown in any state (no date constraints)
 ├── images/                 # All images (WebP preferred)
 │   ├── countdown/          # Countdown-specific images
 │   ├── specials/           # Special date images
@@ -39,10 +40,11 @@ CNAME                       # GitHub Pages custom domain
 The script resolves which view to show in this order:
 
 1. `?id=` query param → show specific meme (searches all 3 catalogs)
-2. Special date match (`specials.json`) → show special image
-3. July (month === 6) → random meme for the day from `memes.json`
-4. August–December → "Nos vemos el año que viene"
-5. January–June → countdown with random image from `countdown.json`
+2. `?view=galeria` → gallery grid with all memes from all catalogs
+3. Special date match (`specials.json`) → show special image
+4. July (month === 6) → random meme for the day from `memes.json`
+5. August–December → "Nos vemos el año que viene"
+6. January–June → countdown with random image from `countdown.json`
 
 ## Catalog schemas
 
