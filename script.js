@@ -2,10 +2,16 @@
   "use strict";
 
   var JULY = 6;
+  var WEEKDAYS = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
+
+  // --- URL & date helpers ---
+
+  function getParams() {
+    return new URLSearchParams(window.location.search);
+  }
 
   function getEffectiveDate() {
-    var params = new URLSearchParams(window.location.search);
-    var dateParam = params.get("date");
+    var dateParam = getParams().get("date");
     if (dateParam) {
       var parsed = new Date(dateParam + "T00:00:00");
       if (!isNaN(parsed.getTime())) return parsed;
@@ -13,78 +19,68 @@
     return new Date();
   }
 
-  function getRequestedId() {
-    return new URLSearchParams(window.location.search).get("id");
-  }
-
   function daysUntilJuly(now) {
     var year = now.getFullYear();
     var july1 = new Date(year, JULY, 1);
-    if (now >= july1) {
-      july1 = new Date(year + 1, JULY, 1);
-    }
-    var diffMs = july1.getTime() - now.getTime();
-    return Math.ceil(diffMs / (1000 * 60 * 60 * 24));
+    if (now >= july1) july1 = new Date(year + 1, JULY, 1);
+    return Math.ceil((july1 - now) / (1000 * 60 * 60 * 24));
+  }
+
+  function formatJulyDate(day, year) {
+    return WEEKDAYS[new Date(year, JULY, day).getDay()] + ", " + day + " de julio";
   }
 
   function pickRandom(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
   }
 
-  var DAYS = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
+  // --- Catalog filters ---
 
-  function formatJulyDate(day, year) {
-    var weekday = DAYS[new Date(year, JULY, day).getDay()];
-    return weekday + ", " + day + " de julio";
-  }
-
-  function buildShareUrl(meme) {
-    return window.location.origin + window.location.pathname + "?id=" + encodeURIComponent(meme.id);
-  }
-
-  function copyToClipboard(text) {
-    if (navigator.clipboard) {
-      navigator.clipboard.writeText(text);
+  function findById(catalogs, id) {
+    for (var key in catalogs) {
+      var list = catalogs[key];
+      for (var i = 0; i < list.length; i++) {
+        if (list[i].id === id) return list[i];
+      }
     }
+    return null;
   }
 
-  function memesForDay(catalog, day, year) {
-    return catalog.filter(function (meme) {
-      if (day < meme.from || day > meme.to) return false;
-      if (meme.weekday !== undefined) {
-        var fromWeekday = new Date(year, JULY, meme.from).getDay();
-        if (meme.weekday !== fromWeekday) return false;
+  function filterMemes(catalog, day, year) {
+    return catalog.filter(function (m) {
+      if (day < m.from || day > m.to) return false;
+      if (m.weekday !== undefined) {
+        if (m.weekday !== new Date(year, JULY, m.from).getDay()) return false;
       }
       return true;
     });
   }
 
-  function findMemeById(catalog, id) {
-    for (var i = 0; i < catalog.length; i++) {
-      if (catalog[i].id === id) return catalog[i];
-    }
-    return null;
+  function filterCountdown(catalog, days) {
+    return catalog.filter(function (m) {
+      return days >= m.minDays && days <= m.maxDays;
+    });
   }
 
-  function renderMeme(container, meme, day, year) {
-    var div = document.createElement("div");
-    div.className = "meme-container";
+  function filterSpecials(catalog, month, day) {
+    return catalog.filter(function (s) {
+      return s.month === month + 1 && day >= s.from && day <= s.to;
+    });
+  }
 
-    var dateLabel = document.createElement("p");
-    dateLabel.className = "meme-date";
-    dateLabel.textContent = formatJulyDate(day, year);
-    div.appendChild(dateLabel);
+  // --- DOM builders ---
 
+  function createImage(src, alt, cssClass) {
     var img = document.createElement("img");
-    img.className = "meme-image";
-    img.src = "images/" + meme.file;
-    img.alt = meme.alt;
-    img.width = 600;
-    img.height = 600;
+    img.className = cssClass;
+    img.src = src;
+    img.alt = alt;
     img.setAttribute("fetchpriority", "high");
     img.decoding = "async";
-    div.appendChild(img);
+    return img;
+  }
 
+  function createActions(meme) {
     var actions = document.createElement("div");
     actions.className = "meme-actions";
 
@@ -97,47 +93,46 @@
     });
     actions.appendChild(shuffleBtn);
 
-    var shareUrl = buildShareUrl(meme);
+    var shareUrl = window.location.origin + window.location.pathname + "?id=" + encodeURIComponent(meme.id);
 
     var shareBtn = document.createElement("button");
     shareBtn.className = "btn";
     shareBtn.setAttribute("aria-label", "Copiar enlace directo a este meme");
     shareBtn.textContent = "🔗 Copiar link";
     shareBtn.addEventListener("click", function () {
-      copyToClipboard(shareUrl);
+      if (navigator.clipboard) navigator.clipboard.writeText(shareUrl);
       shareBtn.textContent = "✅ Copiado";
-      setTimeout(function () {
-        shareBtn.textContent = "🔗 Copiar link";
-      }, 2000);
+      setTimeout(function () { shareBtn.textContent = "🔗 Copiar link"; }, 2000);
     });
     actions.appendChild(shareBtn);
 
-    div.appendChild(actions);
-    container.appendChild(div);
+    return actions;
   }
 
-  function countdownMemesForDays(catalog, days) {
-    return catalog.filter(function (meme) {
-      return days >= meme.minDays && days <= meme.maxDays;
-    });
+  // --- Renderers ---
+
+  function renderMeme(container, meme, day, year) {
+    var div = document.createElement("div");
+    div.className = "meme-container";
+
+    var dateLabel = document.createElement("p");
+    dateLabel.className = "meme-date";
+    dateLabel.textContent = formatJulyDate(day, year);
+    div.appendChild(dateLabel);
+
+    div.appendChild(createImage("images/" + meme.file, meme.alt, "meme-image"));
+    div.appendChild(createActions(meme));
+
+    container.appendChild(div);
   }
 
   function renderCountdown(container, days, countdownCatalog) {
     var div = document.createElement("div");
     div.className = "countdown-container";
 
-    var available = countdownMemesForDays(countdownCatalog, days);
+    var available = filterCountdown(countdownCatalog, days);
     if (available.length > 0) {
-      var meme = pickRandom(available);
-      var img = document.createElement("img");
-      img.className = "countdown-image";
-      img.src = "images/" + meme.file;
-      img.alt = meme.alt;
-      img.width = 480;
-      img.height = 480;
-      img.setAttribute("fetchpriority", "high");
-      img.decoding = "async";
-      div.appendChild(img);
+      div.appendChild(createImage("images/" + pickRandom(available).file, available[0].alt, "countdown-image"));
     } else {
       var emoji = document.createElement("div");
       emoji.className = "countdown-emoji";
@@ -154,6 +149,22 @@
     label.className = "countdown-label";
     label.textContent = days === 1 ? "día para julio" : "días para julio";
     div.appendChild(label);
+
+    container.appendChild(div);
+  }
+
+  function renderSpecial(container, special) {
+    var div = document.createElement("div");
+    div.className = "meme-container";
+
+    div.appendChild(createImage("images/" + special.file, special.alt, "meme-image"));
+
+    if (special.caption) {
+      var caption = document.createElement("p");
+      caption.className = "meme-date";
+      caption.textContent = special.caption;
+      div.appendChild(caption);
+    }
 
     container.appendChild(div);
   }
@@ -175,46 +186,55 @@
     container.appendChild(div);
   }
 
-  function init() {
-    var content = document.getElementById("content");
+  // --- Init ---
 
-    Promise.all([
-      fetch("memes.json").then(function (res) { return res.json(); }),
-      fetch("countdown.json").then(function (res) { return res.json(); })
+  function loadCatalogs() {
+    return Promise.all([
+      fetch("memes.json").then(function (r) { return r.json(); }),
+      fetch("countdown.json").then(function (r) { return r.json(); }),
+      fetch("specials.json").then(function (r) { return r.json(); })
     ]).then(function (results) {
-      var catalog = results[0];
-      var countdownCatalog = results[1];
-      content.innerHTML = "";
-
-      var requestedId = getRequestedId();
-      if (requestedId) {
-        var match = findMemeById(catalog, requestedId);
-        if (match) {
-          var now = getEffectiveDate();
-          renderMeme(content, match, now.getMonth() === JULY ? now.getDate() : match.from, now.getFullYear());
-          return;
-        }
-      }
-
-      var now = getEffectiveDate();
-      var month = now.getMonth();
-      var day = now.getDate();
-
-      if (month === JULY) {
-        var available = memesForDay(catalog, day, now.getFullYear());
-        if (available.length > 0) {
-          renderMeme(content, pickRandom(available), day, now.getFullYear());
-        } else {
-          renderMeme(content, { file: "", alt: "Sin meme para hoy", id: "empty", from: day, to: day }, day, now.getFullYear());
-        }
-      } else if (month > JULY) {
-        renderSeeYou(content);
-      } else {
-        var remaining = daysUntilJuly(now);
-        renderCountdown(content, remaining, countdownCatalog);
-      }
+      return { memes: results[0], countdown: results[1], specials: results[2] };
     });
   }
 
-  init();
+  function resolveState(catalogs) {
+    var now = getEffectiveDate();
+    var month = now.getMonth();
+    var day = now.getDate();
+    var year = now.getFullYear();
+
+    var requestedId = getParams().get("id");
+    if (requestedId) {
+      var match = findById(catalogs, requestedId);
+      if (match) return { type: "meme", meme: match, day: month === JULY ? day : (match.from || 1), year: year };
+    }
+
+    var specials = filterSpecials(catalogs.specials, month, day);
+    if (specials.length > 0) return { type: "special", special: pickRandom(specials) };
+
+    if (month === JULY) {
+      var available = filterMemes(catalogs.memes, day, year);
+      if (available.length > 0) return { type: "meme", meme: pickRandom(available), day: day, year: year };
+      return { type: "meme", meme: { file: "", alt: "Sin meme para hoy", id: "empty" }, day: day, year: year };
+    }
+
+    if (month > JULY) return { type: "see-you" };
+
+    return { type: "countdown", days: daysUntilJuly(now), catalog: catalogs.countdown };
+  }
+
+  function render(container, state) {
+    container.innerHTML = "";
+    switch (state.type) {
+      case "meme":     return renderMeme(container, state.meme, state.day, state.year);
+      case "special":  return renderSpecial(container, state.special);
+      case "countdown": return renderCountdown(container, state.days, state.catalog);
+      case "see-you":  return renderSeeYou(container);
+    }
+  }
+
+  loadCatalogs().then(function (catalogs) {
+    render(document.getElementById("content"), resolveState(catalogs));
+  });
 })();
