@@ -31,8 +31,11 @@
     return arr[Math.floor(Math.random() * arr.length)];
   }
 
-  function formatJulyDate(day) {
-    return day + " de julio";
+  var DAYS = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
+
+  function formatJulyDate(day, year) {
+    var weekday = DAYS[new Date(year, JULY, day).getDay()];
+    return weekday + ", " + day + " de julio";
   }
 
   function buildShareUrl(meme) {
@@ -63,13 +66,13 @@
     return null;
   }
 
-  function renderMeme(container, meme, day) {
+  function renderMeme(container, meme, day, year) {
     var div = document.createElement("div");
     div.className = "meme-container";
 
     var dateLabel = document.createElement("p");
     dateLabel.className = "meme-date";
-    dateLabel.textContent = formatJulyDate(day);
+    dateLabel.textContent = formatJulyDate(day, year);
     div.appendChild(dateLabel);
 
     var img = document.createElement("img");
@@ -165,7 +168,7 @@
           var match = findMemeById(catalog, requestedId);
           if (match) {
             var now = getEffectiveDate();
-            renderMeme(content, match, now.getMonth() === JULY ? now.getDate() : match.from);
+            renderMeme(content, match, now.getMonth() === JULY ? now.getDate() : match.from, now.getFullYear());
             return;
           }
         }
@@ -177,9 +180,9 @@
         if (month === JULY) {
           var available = memesForDay(catalog, day, now.getFullYear());
           if (available.length > 0) {
-            renderMeme(content, pickRandom(available), day);
+            renderMeme(content, pickRandom(available), day, now.getFullYear());
           } else {
-            renderMeme(content, { file: "", alt: "Sin meme para hoy", id: "empty", from: day, to: day }, day);
+            renderMeme(content, { file: "", alt: "Sin meme para hoy", id: "empty", from: day, to: day }, day, now.getFullYear());
           }
         } else if (month > JULY) {
           renderSeeYou(content);
