@@ -77,8 +77,20 @@
     img.setAttribute("fetchpriority", "high");
     img.decoding = "async";
     img.addEventListener("load", function () { img.classList.add("loaded"); });
+    img.addEventListener("click", function () { openLightbox(src, alt); });
     img.src = src;
     return img;
+  }
+
+  function openLightbox(src, alt) {
+    var overlay = document.createElement("div");
+    overlay.className = "lightbox active";
+    var img = document.createElement("img");
+    img.src = src;
+    img.alt = alt;
+    overlay.appendChild(img);
+    overlay.addEventListener("click", function () { overlay.remove(); });
+    document.body.appendChild(overlay);
   }
 
   function createShuffleBtn() {
