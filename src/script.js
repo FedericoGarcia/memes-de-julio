@@ -408,12 +408,19 @@
 
   // --- Init ---
 
+  function fetchJSON(url) {
+    return fetch(url).then(function (r) {
+      if (!r.ok) return [];
+      return r.json();
+    });
+  }
+
   function loadCatalogs() {
     return Promise.all([
-      fetch("memes.json").then(function (r) { return r.json(); }),
-      fetch("countdown.json").then(function (r) { return r.json(); }),
-      fetch("specials.json").then(function (r) { return r.json(); }),
-      fetch("generic.json").then(function (r) { return r.json(); })
+      fetchJSON("memes.json"),
+      fetchJSON("countdown.json"),
+      fetchJSON("specials.json"),
+      fetchJSON("generic.json")
     ]).then(function (results) {
       return { memes: results[0], countdown: results[1], specials: results[2], generic: results[3] };
     });
