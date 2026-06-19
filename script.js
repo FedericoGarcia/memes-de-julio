@@ -116,14 +116,34 @@
     container.appendChild(div);
   }
 
-  function renderCountdown(container, days) {
+  function countdownMemesForDays(catalog, days) {
+    return catalog.filter(function (meme) {
+      return days >= meme.minDays && days <= meme.maxDays;
+    });
+  }
+
+  function renderCountdown(container, days, countdownCatalog) {
     var div = document.createElement("div");
     div.className = "countdown-container";
 
-    var emoji = document.createElement("div");
-    emoji.className = "countdown-emoji";
-    emoji.textContent = "⏳";
-    div.appendChild(emoji);
+    var available = countdownMemesForDays(countdownCatalog, days);
+    if (available.length > 0) {
+      var meme = pickRandom(available);
+      var img = document.createElement("img");
+      img.className = "countdown-image";
+      img.src = "images/" + meme.file;
+      img.alt = meme.alt;
+      img.width = 480;
+      img.height = 480;
+      img.setAttribute("fetchpriority", "high");
+      img.decoding = "async";
+      div.appendChild(img);
+    } else {
+      var emoji = document.createElement("div");
+      emoji.className = "countdown-emoji";
+      emoji.textContent = "⏳";
+      div.appendChild(emoji);
+    }
 
     var number = document.createElement("div");
     number.className = "countdown-number";
@@ -158,39 +178,42 @@
   function init() {
     var content = document.getElementById("content");
 
-    fetch("memes.json")
-      .then(function (res) { return res.json(); })
-      .then(function (catalog) {
-        content.innerHTML = "";
+    Promise.all([
+      fetch("memes.json").then(function (res) { return res.json(); }),
+      fetch("countdown.json").then(function (res) { return res.json(); })
+    ]).then(function (results) {
+      var catalog = results[0];
+      var countdownCatalog = results[1];
+      content.innerHTML = "";
 
-        var requestedId = getRequestedId();
-        if (requestedId) {
-          var match = findMemeById(catalog, requestedId);
-          if (match) {
-            var now = getEffectiveDate();
-            renderMeme(content, match, now.getMonth() === JULY ? now.getDate() : match.from, now.getFullYear());
-            return;
-          }
+      var requestedId = getRequestedId();
+      if (requestedId) {
+        var match = findMemeById(catalog, requestedId);
+        if (match) {
+          var now = getEffectiveDate();
+          renderMeme(content, match, now.getMonth() === JULY ? now.getDate() : match.from, now.getFullYear());
+          return;
         }
+      }
 
-        var now = getEffectiveDate();
-        var month = now.getMonth();
-        var day = now.getDate();
+      var now = getEffectiveDate();
+      var month = now.getMonth();
+      var day = now.getDate();
 
-        if (month === JULY) {
-          var available = memesForDay(catalog, day, now.getFullYear());
-          if (available.length > 0) {
-            renderMeme(content, pickRandom(available), day, now.getFullYear());
-          } else {
-            renderMeme(content, { file: "", alt: "Sin meme para hoy", id: "empty", from: day, to: day }, day, now.getFullYear());
-          }
-        } else if (month > JULY) {
-          renderSeeYou(content);
+      if (month === JULY) {
+        var available = memesForDay(catalog, day, now.getFullYear());
+        if (available.length > 0) {
+          renderMeme(content, pickRandom(available), day, now.getFullYear());
         } else {
-          var remaining = daysUntilJuly(now);
-          renderCountdown(content, remaining);
+          renderMeme(content, { file: "", alt: "Sin meme para hoy", id: "empty", from: day, to: day }, day, now.getFullYear());
         }
-      });
+      } else if (month > JULY) {
+        renderSeeYou(content);
+      } else {
+        var remaining = daysUntilJuly(now);
+        renderCountdown(content, remaining, countdownCatalog);
+      }
+    });
   }
 
   init();

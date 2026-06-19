@@ -1,0 +1,23 @@
+[
+  {
+    "id": "en-3-meses-llega-julio",
+    "file": "countdown/en-3-meses-llega-julio.jpg",
+    "alt": "Ecografía con la cara de Julio Iglesias. Texto: En menos de 3 meses llega Julio",
+    "minDays": 1,
+    "maxDays": 90
+  },
+  {
+    "id": "cuanto-falta-para-julio",
+    "file": "countdown/cuanto-falta-para-julio.webp",
+    "alt": "Julio Iglesias señalando con gesto pícaro. Texto: ¿Cuánto falta para Julio?",
+    "minDays": 1,
+    "maxDays": 365
+  },
+  {
+    "id": "julio-se-viene-con-todo",
+    "file": "countdown/julio-se-viene-con-todo.png",
+    "alt": "Julio Iglesias en una bicicleta sobrecargada de equipaje. Texto: Julio se viene con todo",
+    "minDays": 1,
+    "maxDays": 60
+  }
+]
