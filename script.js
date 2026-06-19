@@ -81,43 +81,60 @@
     return img;
   }
 
-  function createActions(meme) {
-    var actions = document.createElement("div");
-    actions.className = "meme-actions";
-
-    var shuffleBtn = document.createElement("button");
-    shuffleBtn.className = "btn";
-    shuffleBtn.setAttribute("aria-label", "Cargar otro meme al azar");
-    shuffleBtn.textContent = "🔀 Otro meme";
-    shuffleBtn.addEventListener("click", function () {
+  function createShuffleBtn() {
+    var btn = document.createElement("button");
+    btn.className = "btn";
+    btn.setAttribute("aria-label", "Cargar otra imagen al azar");
+    btn.textContent = "🔀 Otra imagen";
+    btn.addEventListener("click", function () {
       window.location.href = window.location.pathname;
     });
-    actions.appendChild(shuffleBtn);
+    return btn;
+  }
 
-    var shareUrl = window.location.origin + window.location.pathname + "?id=" + encodeURIComponent(meme.id);
+  function createShareBtns(url, title) {
+    var fragment = document.createDocumentFragment();
 
     if (navigator.share) {
-      var nativeShareBtn = document.createElement("button");
-      nativeShareBtn.className = "btn";
-      nativeShareBtn.setAttribute("aria-label", "Compartir este meme");
-      nativeShareBtn.textContent = "📤 Compartir";
-      nativeShareBtn.addEventListener("click", function () {
-        navigator.share({ title: "Memes de Julio", url: shareUrl });
+      var nativeBtn = document.createElement("button");
+      nativeBtn.className = "btn";
+      nativeBtn.setAttribute("aria-label", "Compartir");
+      nativeBtn.textContent = "📤 Compartir";
+      nativeBtn.addEventListener("click", function () {
+        navigator.share({ title: title, url: url });
       });
-      actions.appendChild(nativeShareBtn);
+      fragment.appendChild(nativeBtn);
     }
 
     var copyBtn = document.createElement("button");
     copyBtn.className = "btn";
-    copyBtn.setAttribute("aria-label", "Copiar enlace directo a este meme");
+    copyBtn.setAttribute("aria-label", "Copiar enlace");
     copyBtn.textContent = "🔗 Copiar link";
     copyBtn.addEventListener("click", function () {
-      if (navigator.clipboard) navigator.clipboard.writeText(shareUrl);
+      if (navigator.clipboard) navigator.clipboard.writeText(url);
       copyBtn.textContent = "✅ Copiado";
       setTimeout(function () { copyBtn.textContent = "🔗 Copiar link"; }, 2000);
     });
-    actions.appendChild(copyBtn);
+    fragment.appendChild(copyBtn);
 
+    return fragment;
+  }
+
+  function createActions(meme) {
+    var actions = document.createElement("div");
+    actions.className = "meme-actions";
+    var shareUrl = window.location.origin + window.location.pathname + "?id=" + encodeURIComponent(meme.id);
+    actions.appendChild(createShuffleBtn());
+    actions.appendChild(createShareBtns(shareUrl, "Memes de Julio"));
+    return actions;
+  }
+
+  function createGenericActions() {
+    var actions = document.createElement("div");
+    actions.className = "meme-actions";
+    var shareUrl = window.location.origin + window.location.pathname;
+    actions.appendChild(createShuffleBtn());
+    actions.appendChild(createShareBtns(shareUrl, "Memes de Julio — ¿cuánto falta?"));
     return actions;
   }
 
@@ -200,6 +217,8 @@
     label.textContent = days === 1 ? "día para julio" : "días para julio";
     div.appendChild(label);
 
+    div.appendChild(createGenericActions());
+
     container.appendChild(div);
   }
 
@@ -232,6 +251,21 @@
     text.className = "see-you-text";
     text.textContent = "Nos vemos el año que viene";
     div.appendChild(text);
+
+    var actions = document.createElement("div");
+    actions.className = "meme-actions";
+
+    var now = getEffectiveDate();
+    var exploreUrl = window.location.pathname + "?date=" + now.getFullYear() + "-07-01";
+    var exploreBtn = document.createElement("a");
+    exploreBtn.className = "btn";
+    exploreBtn.href = exploreUrl;
+    exploreBtn.textContent = "📅 Ver memes de julio";
+    actions.appendChild(exploreBtn);
+
+    var shareUrl = window.location.origin + window.location.pathname;
+    actions.appendChild(createShareBtns(shareUrl, "Memes de Julio — nos vemos el año que viene"));
+    div.appendChild(actions);
 
     container.appendChild(div);
   }
