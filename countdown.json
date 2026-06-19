@@ -19,5 +19,19 @@
     "alt": "Julio Iglesias en una bicicleta sobrecargada de equipaje. Texto: Julio se viene con todo",
     "minDays": 1,
     "maxDays": 60
+  },
+  {
+    "id": "ahi-viene",
+    "file": "countdown/ahi-viene.jpg",
+    "alt": "Avalancha de caras de Julio Iglesias acercándose como tormenta de arena mientras alguien huye. Texto: Ahí viene",
+    "minDays": 1,
+    "maxDays": 30
+  },
+  {
+    "id": "razones-julio",
+    "file": "countdown/razones-julio.jpg",
+    "alt": "Gráfico de torta: razones por las que quiero que llegue Julio. 99% memes de Julio Iglesias, 1% vacaciones",
+    "minDays": 1,
+    "maxDays": 365
   }
 ]

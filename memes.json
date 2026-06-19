@@ -88,7 +88,7 @@
     "file": "no-lo-ves-venir.jpg",
     "alt": "Julio Iglesias junto a Stevie Wonder. Texto: Cuando llega julio y no lo ves venir",
     "from": 1,
-    "to": 31
+    "to": 7
   },
   {
     "id": "frio-monumental",
@@ -109,27 +109,13 @@
     "file": "julio-desde-martes.jpg",
     "alt": "Julio Iglesias como astronauta en Marte rodeado de aliens. Texto: Julio llegará desde Martes",
     "from": 1,
-    "to": 31,
+    "to": 1,
     "weekday": 2
   },
   {
     "id": "bajas-temperaturas",
     "file": "bajas-temperaturas.jpg",
     "alt": "Julio Iglesias con campera de nieve bajo una tormenta. Texto: Se anuncian bajas temperaturas para Julio",
-    "from": 1,
-    "to": 31
-  },
-  {
-    "id": "ahi-viene",
-    "file": "ahi-viene.jpg",
-    "alt": "Avalancha de caras de Julio Iglesias acercándose como tormenta de arena mientras alguien huye. Texto: Ahí viene",
-    "from": 1,
-    "to": 31
-  },
-  {
-    "id": "razones-julio",
-    "file": "razones-julio.jpg",
-    "alt": "Gráfico de torta: razones por las que quiero que llegue Julio. 99% memes de Julio Iglesias, 1% vacaciones",
     "from": 1,
     "to": 31
   },
