@@ -168,6 +168,14 @@
   // --- Animated countdown ---
 
   function animateNumber(el, target) {
+    try {
+      if (sessionStorage.getItem("countdownAnimated")) {
+        el.textContent = target;
+        return;
+      }
+      sessionStorage.setItem("countdownAnimated", "1");
+    } catch (e) { /* fallback: animate */ }
+
     var duration = 800;
     var start = performance.now();
     var year = getEffectiveDate().getFullYear();
