@@ -28,7 +28,7 @@ jobs:
 
       - name: Build
         run: |
-          mkdir -p _site/images
+          mkdir -p _site
 
           # Minify JS
           terser src/script.js -o _site/script.js --compress --mangle
