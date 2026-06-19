@@ -14,9 +14,51 @@
     "to": 1
   },
   {
+    "id": "feliz-julio-nuevo",
+    "file": "feliz-julio-nuevo.jpg",
+    "alt": "Julio Iglesias celebrando con confeti como si fuera año nuevo. Texto: Feliz Julio nuevo!!!!!",
+    "from": 1,
+    "to": 1
+  },
+  {
+    "id": "luno-de-julio",
+    "file": "luno-de-julio.jpg",
+    "alt": "Julio Iglesias superpuesto en la luna llena sobre fondo negro. Texto: Luno de Julio",
+    "from": 1,
+    "to": 1
+  },
+  {
+    "id": "primer-dia-de-julio",
+    "file": "primer-dia-de-julio.jpg",
+    "alt": "Julio Iglesias como niño yendo a la escuela de la mano de un adulto generado por IA. Texto: Primer día de Julio",
+    "from": 1,
+    "to": 1
+  },
+  {
+    "id": "julio-llego-de-golpe",
+    "file": "julio-llego-de-golpe.jpg",
+    "alt": "Julio Iglesias entrando sorpresivamente por la puerta con valija. Texto: Julio llegó de golpe",
+    "from": 1,
+    "to": 1
+  },
+  {
     "id": "julio-entero",
     "file": "julio-entero.png",
     "alt": "Julio Iglesias montado en un tero en un bosque nevado con texto: Uff que frío hace! Y pensar que aún nos falta julio en-tero",
+    "from": 1,
+    "to": 5
+  },
+  {
+    "id": "julio-ya-es-oficial",
+    "file": "julio-ya-es-oficial.jpg",
+    "alt": "Julio Iglesias vestido de oficial militar con uniforme de gala. Texto: Julio ya es oficial",
+    "from": 1,
+    "to": 3
+  },
+  {
+    "id": "julio-ya-camina",
+    "file": "julio-ya-camina.jpg",
+    "alt": "Julio Iglesias como bebé dando sus primeros pasos. Texto: Julio ya camina",
     "from": 1,
     "to": 5
   },
@@ -40,5 +82,62 @@
     "alt": "Julio Iglesias de traje señalando con gesto pícaro. Texto: Veo mal? O es... 2 de Julio",
     "from": 2,
     "to": 2
+  },
+  {
+    "id": "no-lo-ves-venir",
+    "file": "no-lo-ves-venir.jpg",
+    "alt": "Julio Iglesias junto a Stevie Wonder. Texto: Cuando llega julio y no lo ves venir",
+    "from": 1,
+    "to": 31
+  },
+  {
+    "id": "frio-monumental",
+    "file": "frio-monumental.jpg",
+    "alt": "Julio Iglesias con camiseta de River Plate en el estadio Monumental nevado. Texto: Llega Julio con un frío monumental",
+    "from": 1,
+    "to": 31
+  },
+  {
+    "id": "cayo-julio",
+    "file": "cayo-julio.jpg",
+    "alt": "Julio Iglesias caído en el piso siendo ayudado por una señora. Texto: Cayó Julio nomás...",
+    "from": 1,
+    "to": 31
+  },
+  {
+    "id": "julio-desde-martes",
+    "file": "julio-desde-martes.jpg",
+    "alt": "Julio Iglesias como astronauta en Marte rodeado de aliens. Texto: Julio llegará desde Martes",
+    "from": 1,
+    "to": 31,
+    "weekday": 2
+  },
+  {
+    "id": "bajas-temperaturas",
+    "file": "bajas-temperaturas.jpg",
+    "alt": "Julio Iglesias con campera de nieve bajo una tormenta. Texto: Se anuncian bajas temperaturas para Julio",
+    "from": 1,
+    "to": 31
+  },
+  {
+    "id": "ahi-viene",
+    "file": "ahi-viene.jpg",
+    "alt": "Avalancha de caras de Julio Iglesias acercándose como tormenta de arena mientras alguien huye. Texto: Ahí viene",
+    "from": 1,
+    "to": 31
+  },
+  {
+    "id": "razones-julio",
+    "file": "razones-julio.jpg",
+    "alt": "Gráfico de torta: razones por las que quiero que llegue Julio. 99% memes de Julio Iglesias, 1% vacaciones",
+    "from": 1,
+    "to": 31
+  },
+  {
+    "id": "julio-lleno-de-bendiciones",
+    "file": "julio-lleno-de-bendiciones.jpg",
+    "alt": "Julio Iglesias rodeado de muchos bebés generado por IA. Texto: Te deseo un Julio lleno de bendiciones",
+    "from": 1,
+    "to": 31
   }
 ]

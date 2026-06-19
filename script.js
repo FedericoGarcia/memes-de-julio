@@ -45,9 +45,14 @@
     }
   }
 
-  function memesForDay(catalog, day) {
+  function memesForDay(catalog, day, year) {
     return catalog.filter(function (meme) {
-      return day >= meme.from && day <= meme.to;
+      if (day < meme.from || day > meme.to) return false;
+      if (meme.weekday !== undefined) {
+        var fromWeekday = new Date(year, JULY, meme.from).getDay();
+        if (meme.weekday !== fromWeekday) return false;
+      }
+      return true;
     });
   }
 
@@ -170,7 +175,7 @@
         var day = now.getDate();
 
         if (month === JULY) {
-          var available = memesForDay(catalog, day);
+          var available = memesForDay(catalog, day, now.getFullYear());
           if (available.length > 0) {
             renderMeme(content, pickRandom(available), day);
           } else {
