@@ -230,3 +230,37 @@ footer a:hover {
     border-radius: 8px;
   }
 }
+
+@media (orientation: landscape) and (min-width: 640px) {
+  main {
+    max-width: 960px;
+  }
+
+  .meme-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .meme-image {
+    max-height: 70vh;
+    max-width: 55%;
+    flex-shrink: 0;
+  }
+
+  .meme-container .meme-date,
+  .meme-container .meme-actions {
+    text-align: center;
+  }
+
+  .countdown-container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .countdown-image {
+    max-height: 70vh;
+    max-width: 50%;
+    flex-shrink: 0;
+  }
+}
