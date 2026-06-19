@@ -143,7 +143,8 @@
   function animateNumber(el, target) {
     var duration = 800;
     var start = performance.now();
-    var from = Math.min(target + 20, 365);
+    var year = getEffectiveDate().getFullYear();
+    var from = (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)) ? 366 : 365;
 
     function tick(now) {
       var t = Math.min((now - start) / duration, 1);
