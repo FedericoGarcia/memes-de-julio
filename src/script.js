@@ -540,12 +540,6 @@
     document.body.appendChild(overlay);
   }
 
-  var themeMap = { "1": "dopamine", "4": "julio-gold" };
-  var themeParam = getParams().get("theme");
-  if (themeParam && themeMap[themeParam]) {
-    document.documentElement.setAttribute("data-theme", themeMap[themeParam]);
-  }
-
   var suggestBtn = document.getElementById("suggest-btn");
   if (suggestBtn) suggestBtn.addEventListener("click", openSuggestModal);
 
