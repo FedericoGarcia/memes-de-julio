@@ -109,7 +109,7 @@
 
   function createGalleryItem(item) {
     var link = document.createElement("a");
-    link.href = "?id=" + encodeURIComponent(item.id);
+    link.href = "?id=" + encodeURIComponent(item.id) + "&from=galeria";
     link.className = "gallery-item";
 
     var img = document.createElement("img");
@@ -317,6 +317,42 @@
       div.appendChild(caption);
     }
 
+    div.appendChild(createActions(special));
+    container.appendChild(div);
+  }
+
+  function renderGalleryDetail(container, item, catalog) {
+    var div = document.createElement("div");
+    div.className = "meme-container";
+
+    if (catalog === "memes") {
+      var rangeLabel = document.createElement("p");
+      rangeLabel.className = "meme-date";
+      rangeLabel.textContent = formatRangeLabel(item);
+      div.appendChild(rangeLabel);
+    }
+
+    div.appendChild(createImage("images/" + item.file, item.alt, "meme-image"));
+
+    if (item.caption) {
+      var caption = document.createElement("p");
+      caption.className = "meme-date";
+      caption.textContent = item.caption;
+      div.appendChild(caption);
+    }
+
+    var actions = document.createElement("div");
+    actions.className = "meme-actions";
+    var shareUrl = window.location.origin + window.location.pathname + "?id=" + encodeURIComponent(item.id);
+    actions.appendChild(createShareBtns(shareUrl, "Memes de Julio"));
+
+    var backBtn = document.createElement("a");
+    backBtn.className = "btn";
+    backBtn.href = "?view=galeria";
+    backBtn.textContent = "← Galería";
+    actions.appendChild(backBtn);
+
+    div.appendChild(actions);
     container.appendChild(div);
   }
 
@@ -436,6 +472,9 @@
     if (requestedId) {
       var result = findById(catalogs, requestedId);
       if (result) {
+        if (getParams().get("from") === "galeria") {
+          return { type: "gallery-detail", item: result.item, catalog: result.catalog };
+        }
         if (result.catalog === "specials") return { type: "special", special: result.item };
         return { type: "meme", meme: result.item, day: null, year: year };
       }
@@ -462,11 +501,12 @@
   function render(container, state) {
     container.innerHTML = "";
     switch (state.type) {
-      case "meme":      return renderMeme(container, state.meme, state.day, state.year);
-      case "special":   return renderSpecial(container, state.special);
-      case "countdown": return renderCountdown(container, state.days, state.catalog);
-      case "see-you":   return renderSeeYou(container);
-      case "gallery":   return renderGallery(container, state.catalogs);
+      case "meme":           return renderMeme(container, state.meme, state.day, state.year);
+      case "special":        return renderSpecial(container, state.special);
+      case "countdown":      return renderCountdown(container, state.days, state.catalog);
+      case "see-you":        return renderSeeYou(container);
+      case "gallery":        return renderGallery(container, state.catalogs);
+      case "gallery-detail": return renderGalleryDetail(container, state.item, state.catalog);
     }
   }
 
