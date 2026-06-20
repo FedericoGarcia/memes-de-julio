@@ -103,6 +103,12 @@ GitHub Actions are pinned to commit SHAs. Dependabot keeps them updated.
 1. Add WebP image to `src/images/specials/`
 2. Add entry to `src/specials.json`
 
+### New generic meme
+
+1. Add WebP image to `src/images/`
+2. Add entry to `src/generic.json` with id, file, alt
+3. Push to `main`
+
 ### Image workflow
 
 1. Drop raw images in `src/images/inbox/` (gitignored)
