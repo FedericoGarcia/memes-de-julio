@@ -207,8 +207,8 @@
     "id": "diez-y-siete-de-julio",
     "file": "diez-y-siete-de-julio.webp",
     "alt": "Julio Iglesias en selfie con Messi y Cristiano Ronaldo generado por IA. Texto: 10 y 7 de Julio",
-    "from": 10,
-    "to": 10
+    "from": 17,
+    "to": 17
   },
   {
     "id": "elon-cd-julio",
@@ -253,11 +253,11 @@
     "to": 15
   },
   {
-    "id": "quince-de-julio-torta",
-    "file": "quince-de-julio-torta.webp",
-    "alt": "Julio Iglesias como quinceañera con torta de 15. Texto: El 15 de Julio",
-    "from": 15,
-    "to": 15
+    "id": "se-viene-el-uno-y-dos",
+    "file": "se-viene-el-uno-y-dos.webp",
+    "alt": "Julio Iglesias en el baño, una imagen de pie y otra sentado. Texto: Se viene el UNO y DOS de Julio",
+    "from": 1,
+    "to": 2
   },
   {
     "id": "se-fue-la-mitad-de-julio",
@@ -279,13 +279,6 @@
     "alt": "Julio Iglesias corriendo detrás de una mano que se escapa. Texto: A Julio se le está yendo la mano",
     "from": 20,
     "to": 31
-  },
-  {
-    "id": "se-viene-el-29-noquis",
-    "file": "se-viene-el-29-noquis.webp",
-    "alt": "Julio Iglesias haciendo ñoquis caseros en una mesa. Texto: Se viene el 29 y Julio lo sabe",
-    "from": 29,
-    "to": 29
   },
   {
     "id": "julio-entra-recta-final",
