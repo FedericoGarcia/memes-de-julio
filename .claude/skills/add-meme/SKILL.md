@@ -1,3 +1,9 @@
+---
+description: Categorize and add a new meme image to the site. Analyzes images, determines the correct catalog (memes, countdown, generic, or specials), converts to WebP, generates metadata, and updates JSON catalogs.
+argument-hint: "[image-path]"
+user-invocable: true
+---
+
 # Add Meme
 
 Categorize and add a new meme image to the site.
