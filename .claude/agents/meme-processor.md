@@ -40,9 +40,10 @@ When asked to scan or triage the inbox:
 2. **Process in batches of 15.** For each batch:
    a. Read each image and analyze its content (text overlay, visual, date references).
    b. Check for duplicates against existing catalog images.
-   c. Generate a descriptive kebab-case filename.
-   d. Determine the suggested catalog and date fields.
-   e. Rename the file in place (keep original extension).
+   c. Assess schema fit — flag memes that don't map cleanly (see "Schema observations" below).
+   d. Generate a descriptive kebab-case filename.
+   e. Determine the suggested catalog and date fields.
+   f. Rename the file in place (keep original extension).
 3. **Append results to the triage report** at `src/images/inbox/triage-report.json`.
 4. **Track progress in memory** — record which batch you finished so you can resume if interrupted.
 5. After all batches, output a summary: total scanned, new, duplicates, upgrades.
@@ -57,7 +58,8 @@ When asked to scan or triage the inbox:
     "total": 215,
     "new": 180,
     "duplicate": 30,
-    "upgrade": 5
+    "upgrade": 5,
+    "with_observations": 12
   },
   "items": [
     {
@@ -67,7 +69,8 @@ When asked to scan or triage the inbox:
       "catalog": "memes",
       "fields": { "from": 1, "to": 1 },
       "alt": "Julio Iglesias celebrating. Texto: 1 de Julio",
-      "description": "Julio celebrating the first day of July"
+      "description": "Julio celebrating the first day of July",
+      "observation": null
     },
     {
       "file": "IMG_3011.png",
@@ -85,7 +88,15 @@ When asked to scan or triage the inbox:
       "catalog": "generic",
       "fields": {},
       "alt": "Julio Iglesias posing. Texto: Es Julio",
-      "description": "Same as julio-viejo but higher resolution"
+      "description": "Same as julio-viejo but higher resolution",
+      "observation": null
+    }
+  ],
+  "schema_suggestions": [
+    {
+      "trigger": "5 memes reference multi-catalog scenarios",
+      "suggestion": "Add optional crossRef field to link entries across catalogs",
+      "affected_items": ["julio-navidad", "julio-independencia", "..."]
     }
   ]
 }
@@ -110,9 +121,25 @@ When asked to load or add memes from the triage report:
 5. **After each batch**, update memory with progress and commit the changes.
 6. **Validate** after all batches: run the duplicate-check script to ensure no ID collisions.
 
+## Schema observations
+
+Not every meme fits cleanly into the current catalog schemas. When processing, flag these cases:
+
+- **Ambiguous catalog**: could belong to more than one catalog (e.g., a Christmas + July crossover)
+- **Schema gap**: needs fields the target catalog doesn't have (e.g., `caption` in memes.json)
+- **Partial fit**: date range is approximate or year-dependent (e.g., "last weekend of July")
+- **Multi-catalog**: genuinely belongs in two catalogs simultaneously
+- **Ambiguous intent**: can't tell if date-specific or generic without human input
+
+For each flagged item, set the `observation` field in the triage report with a short explanation. After all batches, aggregate observations into `schema_suggestions` — group recurring issues and propose concrete schema changes.
+
+In the final summary, present schema suggestions as a separate section so the user can decide whether to update the schemas before loading. Don't apply schema changes automatically.
+
+When loading items with observations (Phase 2), use the best available fit and note the compromise in the commit message. If the observation says "ambiguous intent", skip the item and ask the user.
+
 ## Batch processing rules
 
-- Never try to read all 200+ images in one pass — always batch.
+- Always process in batches to keep context manageable.
 - After each batch, write progress to memory so you can resume if the session ends.
 - If an image fails to process (corrupt, unreadable), log it and continue with the next one.
 - Commit after each batch with message: `feat: add memes batch N (items X-Y)`.
