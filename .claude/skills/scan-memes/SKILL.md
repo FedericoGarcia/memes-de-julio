@@ -37,7 +37,7 @@ Read each image file. For each one, identify:
 
 ### Step 3 — Detect duplicates
 
-For each scanned image, check if a visually similar meme already exists in the site. Compare against all images referenced in the four JSON catalogs (`src/memes.json`, `src/countdown.json`, `src/generic.json`, `src/specials.json`).
+For each scanned image, check if a visually similar meme already exists in the site. Compare against all images referenced in the four JSON catalogs (`src/catalogs/memes.json`, `src/catalogs/countdown.json`, `src/catalogs/generic.json`, `src/catalogs/specials.json`).
 
 To compare, read both the inbox image and the candidate existing image, then judge visual similarity (same base photo, same text overlay, same joke — even if cropped, resized, or re-encoded differently).
 

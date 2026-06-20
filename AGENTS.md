@@ -16,10 +16,11 @@ src/                        # Source files (readable)
 ├── 404.html                # Custom 404 page
 ├── script.js               # All client-side logic (IIFE)
 ├── style.css               # Dark theme, responsive, portrait/landscape
-├── memes.json              # July memes catalog (array with date ranges)
-├── countdown.json          # Countdown images catalog (minDays/maxDays)
-├── specials.json            # Special date easter eggs (month/from/to)
-├── generic.json            # Generic memes shown in any state (no date constraints)
+├── catalogs/               # JSON catalogs (auto-included in build via glob)
+│   ├── memes.json          # July memes catalog (array with date ranges)
+│   ├── countdown.json      # Countdown images catalog (minDays/maxDays)
+│   ├── specials.json       # Special date easter eggs (month/from/to)
+│   └── generic.json        # Generic memes shown in any state (no date constraints)
 ├── images/                 # All images (WebP preferred)
 │   ├── countdown/          # Countdown-specific images
 │   ├── specials/           # Special date images
@@ -90,23 +91,23 @@ GitHub Actions are pinned to commit SHAs. Dependabot keeps them updated.
 ### New meme
 
 1. Add WebP image to `src/images/`
-2. Add entry to `src/memes.json` with id, file, alt, from, to
+2. Add entry to `src/catalogs/memes.json` with id, file, alt, from, to
 3. Push to `main`
 
 ### New countdown image
 
 1. Add WebP image to `src/images/countdown/`
-2. Add entry to `src/countdown.json`
+2. Add entry to `src/catalogs/countdown.json`
 
 ### New special date
 
 1. Add WebP image to `src/images/specials/`
-2. Add entry to `src/specials.json`
+2. Add entry to `src/catalogs/specials.json`
 
 ### New generic meme
 
 1. Add WebP image to `src/images/`
-2. Add entry to `src/generic.json` with id, file, alt
+2. Add entry to `src/catalogs/generic.json` with id, file, alt
 3. Push to `main`
 
 ### Image workflow

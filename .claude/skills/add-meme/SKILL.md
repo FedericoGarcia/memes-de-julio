@@ -36,10 +36,10 @@ Read the image file. Identify:
 
 | Catalog | File | Criteria |
 |---------|------|----------|
-| **memes** | `src/memes.json` | References a specific day or range within July. Has `from`/`to` fields (1-31). Optional `weekday` field. |
-| **countdown** | `src/countdown.json` | Pre-July anticipation. Has `minDays`/`maxDays` fields. |
-| **generic** | `src/generic.json` | No date dependency. Works any time of year. No date fields. |
-| **specials** | `src/specials.json` | Tied to a non-July date (Christmas, birthdays). Has `month`/`from`/`to` fields. |
+| **memes** | `src/catalogs/memes.json` | References a specific day or range within July. Has `from`/`to` fields (1-31). Optional `weekday` field. |
+| **countdown** | `src/catalogs/countdown.json` | Pre-July anticipation. Has `minDays`/`maxDays` fields. |
+| **generic** | `src/catalogs/generic.json` | No date dependency. Works any time of year. No date fields. |
+| **specials** | `src/catalogs/specials.json` | Tied to a non-July date (Christmas, birthdays). Has `month`/`from`/`to` fields. |
 
 Decision rules:
 - Text says "X de Julio" where X is a number → **memes**, `from: X, to: X`
@@ -84,7 +84,7 @@ Add the entry to the appropriate JSON file. Validate with:
 python3 -c "
 import json
 ids = []
-for f in ['src/memes.json','src/countdown.json','src/specials.json','src/generic.json']:
+for f in ['src/catalogs/memes.json','src/catalogs/countdown.json','src/catalogs/specials.json','src/catalogs/generic.json']:
     data = json.load(open(f))
     for item in data:
         ids.append((item['id'], f))
