@@ -510,6 +510,41 @@
     }
   }
 
+  function openSuggestModal() {
+    var overlay = document.createElement("div");
+    overlay.className = "suggest-modal active";
+
+    var card = document.createElement("div");
+    card.className = "suggest-card";
+
+    var img = document.createElement("img");
+    img.src = "images/memes-con-nivel.webp";
+    img.alt = "Julio Iglesias sosteniendo un nivel de albañil. Texto: Si van a subir memes de julio que sea con nivel";
+    img.className = "suggest-image";
+    card.appendChild(img);
+
+    var link = document.createElement("a");
+    link.href = "mailto:memes@memesdejulio.com.ar";
+    link.className = "btn suggest-email-btn";
+    link.textContent = "📧 memes@memesdejulio.com.ar";
+    card.appendChild(link);
+
+    var closeBtn = document.createElement("button");
+    closeBtn.className = "suggest-close";
+    closeBtn.textContent = "✕";
+    closeBtn.addEventListener("click", function () { overlay.remove(); });
+    card.appendChild(closeBtn);
+
+    overlay.appendChild(card);
+    overlay.addEventListener("click", function (e) {
+      if (e.target === overlay) overlay.remove();
+    });
+    document.body.appendChild(overlay);
+  }
+
+  var suggestBtn = document.getElementById("suggest-btn");
+  if (suggestBtn) suggestBtn.addEventListener("click", openSuggestModal);
+
   loadCatalogs().then(function (catalogs) {
     var content = document.getElementById("content");
     var state = resolveState(catalogs);
