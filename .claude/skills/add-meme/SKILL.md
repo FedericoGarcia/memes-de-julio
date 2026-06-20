@@ -49,6 +49,17 @@ Decision rules:
 - Text references a non-July holiday → **specials**
 - When ambiguous, prefer **generic** over **memes** with `from: 1, to: 31`
 
+### Edge cases — when the schema doesn't fit
+
+Not every meme maps cleanly to the current schemas. When this happens, don't force it — flag the issue and suggest alternatives:
+
+- **Multi-catalog**: the meme belongs in two catalogs (e.g., Christmas + July crossover). Add to the primary catalog and note the secondary fit. Suggest adding to both if the user agrees.
+- **Approximate range**: the meme references a period that varies by year ("last weekend of July", "first Monday"). Use the best fixed approximation and note the caveat.
+- **Missing fields**: the meme needs a field the catalog doesn't have (e.g., `caption` in memes.json). Add the entry with available fields and propose the schema extension.
+- **Ambiguous intent**: can't tell if it's date-specific or generic. Ask the user instead of guessing.
+
+When flagging, explain: what doesn't fit, why, and what schema change would fix it. Let the user decide whether to proceed with the approximate fit or update the schema first.
+
 ### Step 3 — Generate metadata
 
 - **id**: kebab-case, descriptive, 3-5 words. Based on the meme text or visual joke. Must be unique across all catalogs.
