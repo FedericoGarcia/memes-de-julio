@@ -1,15 +1,8 @@
 [
   {
-    "id": "por-fin-arranco",
-    "file": "por-fin-arranco.webp",
-    "alt": "Julio Iglesias asomándose desde un Fiat Uno empujado a mano. Texto: Por fin arrancó el uno de Julio",
-    "from": 1,
-    "to": 1
-  },
-  {
-    "id": "rey-de-los-hunos",
-    "file": "rey-de-los-hunos.webp",
-    "alt": "Julio Iglesias vestido de guerrero bárbaro con casco y lanza. Texto: El rey de los hunos... de Julio",
+    "id": "el-uno-de-julio-truco",
+    "file": "el-uno-de-julio-truco.webp",
+    "alt": "Julio Iglesias sonriendo con una carta española de 1 de espadas en la frente. Texto: El 1 de Julio",
     "from": 1,
     "to": 1
   },
@@ -21,9 +14,31 @@
     "to": 1
   },
   {
+    "id": "julio-desde-martes",
+    "file": "julio-desde-martes.webp",
+    "alt": "Julio Iglesias como astronauta en Marte rodeado de aliens. Texto: Julio llegará desde Martes",
+    "from": 1,
+    "to": 1,
+    "weekday": 2
+  },
+  {
+    "id": "julio-llego-de-golpe",
+    "file": "julio-llego-de-golpe.webp",
+    "alt": "Julio Iglesias entrando sorpresivamente por la puerta con valija. Texto: Julio llegó de golpe",
+    "from": 1,
+    "to": 1
+  },
+  {
     "id": "luno-de-julio",
     "file": "luno-de-julio.webp",
     "alt": "Julio Iglesias superpuesto en la luna llena sobre fondo negro. Texto: Luno de Julio",
+    "from": 1,
+    "to": 1
+  },
+  {
+    "id": "por-fin-arranco",
+    "file": "por-fin-arranco.webp",
+    "alt": "Julio Iglesias asomándose desde un Fiat Uno empujado a mano. Texto: Por fin arrancó el uno de Julio",
     "from": 1,
     "to": 1
   },
@@ -35,18 +50,60 @@
     "to": 1
   },
   {
-    "id": "julio-llego-de-golpe",
-    "file": "julio-llego-de-golpe.webp",
-    "alt": "Julio Iglesias entrando sorpresivamente por la puerta con valija. Texto: Julio llegó de golpe",
+    "id": "rey-de-los-hunos",
+    "file": "rey-de-los-hunos.webp",
+    "alt": "Julio Iglesias vestido de guerrero bárbaro con casco y lanza. Texto: El rey de los hunos... de Julio",
     "from": 1,
     "to": 1
   },
   {
-    "id": "julio-entero",
-    "file": "julio-entero.webp",
-    "alt": "Julio Iglesias montado en un tero en un bosque nevado con texto: Uff que frío hace! Y pensar que aún nos falta julio en-tero",
+    "id": "senores-llego-julio",
+    "file": "senores-llego-julio.webp",
+    "alt": "Julio Iglesias en la recepción de un hotel registrándose con una sonrisa. Texto: Señores.....llegó julio",
     "from": 1,
-    "to": 5
+    "to": 1
+  },
+  {
+    "id": "uno-de-julio-uno",
+    "file": "uno-de-julio-uno.webp",
+    "alt": "Julio Iglesias con cartas del juego UNO. Texto: El UNO de Julio",
+    "from": 1,
+    "to": 1
+  },
+  {
+    "id": "se-viene-el-uno-y-dos",
+    "file": "se-viene-el-uno-y-dos.webp",
+    "alt": "Julio Iglesias en el baño, una imagen de pie y otra sentado. Texto: Se viene el UNO y DOS de Julio",
+    "from": 1,
+    "to": 2
+  },
+  {
+    "id": "en-pez-ando-julio",
+    "file": "en-pez-ando-julio.webp",
+    "alt": "Julio Iglesias como personaje de dibujos animados esquiando sobre peces. Texto: En pez ando (Julio)",
+    "from": 1,
+    "to": 3
+  },
+  {
+    "id": "en-pieza-julio-lego",
+    "file": "en-pieza-julio-lego.webp",
+    "alt": "Julio Iglesias sentado sobre bloques de Lego gigantes. Texto: En pieza Julio!!!",
+    "from": 1,
+    "to": 3
+  },
+  {
+    "id": "julio-en-pieza-rompecabezas",
+    "file": "julio-en-pieza-rompecabezas.webp",
+    "alt": "Julio Iglesias como rompecabezas armado señalando al espectador. Texto: Julio en pieza",
+    "from": 1,
+    "to": 3
+  },
+  {
+    "id": "julio-puso-primera",
+    "file": "julio-puso-primera.webp",
+    "alt": "Julio Iglesias al volante de un auto sonriendo. Texto: Julio puso primera",
+    "from": 1,
+    "to": 3
   },
   {
     "id": "julio-ya-es-oficial",
@@ -56,11 +113,110 @@
     "to": 3
   },
   {
+    "id": "empezamos-a-romper-huevos",
+    "file": "empezamos-a-romper-huevos.webp",
+    "alt": "Julio Iglesias cocinando con niños rompiendo huevos en un bowl. Texto: Empezamos a romper los huevos con Julio",
+    "from": 1,
+    "to": 5
+  },
+  {
+    "id": "julio-entero",
+    "file": "julio-entero.webp",
+    "alt": "Julio Iglesias montado en un tero en un bosque nevado con texto: Uff que frío hace! Y pensar que aún nos falta julio en-tero",
+    "from": 1,
+    "to": 5
+  },
+  {
     "id": "julio-ya-camina",
     "file": "julio-ya-camina.webp",
     "alt": "Julio Iglesias como bebé dando sus primeros pasos. Texto: Julio ya camina",
     "from": 1,
     "to": 5
+  },
+  {
+    "id": "julio-ya-esta-en-marcha",
+    "file": "julio-ya-esta-en-marcha.webp",
+    "alt": "Julio Iglesias liderando una marcha multitudinaria con pancartas. Texto: Julio ya está en marcha",
+    "from": 1,
+    "to": 5
+  },
+  {
+    "id": "principios-de-julio",
+    "file": "principios-de-julio.webp",
+    "alt": "Julio Iglesias joven en foto blanco y negro con micrófono. Texto: Principios de Julio",
+    "from": 1,
+    "to": 5
+  },
+  {
+    "id": "no-lo-ves-venir",
+    "file": "no-lo-ves-venir.webp",
+    "alt": "Julio Iglesias junto a Stevie Wonder. Texto: Cuando llega julio y no lo ves venir",
+    "from": 1,
+    "to": 7
+  },
+  {
+    "id": "julio-empieza-a-brillar",
+    "file": "julio-empieza-a-brillar.webp",
+    "alt": "Julio Iglesias cubierto de joyas y cadenas doradas brillando. Texto: Julio empieza a brillar",
+    "from": 1,
+    "to": 10
+  },
+  {
+    "id": "bajas-temperaturas",
+    "file": "bajas-temperaturas.webp",
+    "alt": "Julio Iglesias con campera de nieve bajo una tormenta. Texto: Se anuncian bajas temperaturas para Julio",
+    "from": 1,
+    "to": 31
+  },
+  {
+    "id": "cayo-julio",
+    "file": "cayo-julio.webp",
+    "alt": "Julio Iglesias caído en el piso siendo ayudado por una señora. Texto: Cayó Julio nomás...",
+    "from": 1,
+    "to": 31
+  },
+  {
+    "id": "frio-monumental",
+    "file": "frio-monumental.webp",
+    "alt": "Julio Iglesias con camiseta de River Plate en el estadio Monumental nevado. Texto: Llega Julio con un frío monumental",
+    "from": 1,
+    "to": 31
+  },
+  {
+    "id": "julio-lleno-de-bendiciones",
+    "file": "julio-lleno-de-bendiciones.webp",
+    "alt": "Julio Iglesias rodeado de muchos bebés generado por IA. Texto: Te deseo un Julio lleno de bendiciones",
+    "from": 1,
+    "to": 31
+  },
+  {
+    "id": "placido-domingo-de-julio",
+    "file": "placido-domingo-de-julio.webp",
+    "alt": "Julio Iglesias cantando junto a Placido Domingo en concierto. Texto: QUE TENGAN UN PLACIDO DOMINGO DE JULIO",
+    "from": 1,
+    "to": 31,
+    "weekday": 0
+  },
+  {
+    "id": "2d-julio-caricatura",
+    "file": "2d-julio-caricatura.webp",
+    "alt": "Caricatura estilo vectorial de Julio Iglesias con traje azul. Texto: 2D Julio",
+    "from": 2,
+    "to": 2
+  },
+  {
+    "id": "dogs-de-julio",
+    "file": "dogs-de-julio.webp",
+    "alt": "Julio Iglesias sentado en el jardin con dos perros grandes. Texto: DOGS DE JULIO",
+    "from": 2,
+    "to": 2
+  },
+  {
+    "id": "dos-corazones-de-julio",
+    "file": "dos-corazones-de-julio.webp",
+    "alt": "Julio Iglesias junto a un chocolate Dos Corazones. Texto: El 2 de Julio",
+    "from": 2,
+    "to": 2
   },
   {
     "id": "dos-de-julio",
@@ -77,6 +233,20 @@
     "to": 2
   },
   {
+    "id": "el-do-de-julio-piano",
+    "file": "el-do-de-julio-piano.webp",
+    "alt": "Julio Iglesias tocando el piano con expresion exagerada cantando. Texto: El DO de Julio",
+    "from": 2,
+    "to": 2
+  },
+  {
+    "id": "segundo-de-julio-cronometro",
+    "file": "segundo-de-julio-cronometro.webp",
+    "alt": "Julio Iglesias detrás de un cronómetro marcando 1 segundo sobre fondo celeste y blanco argentino. Texto: Hoy es el segundo de Julio",
+    "from": 2,
+    "to": 2
+  },
+  {
     "id": "veo-mal-o-es",
     "file": "veo-mal-o-es.webp",
     "alt": "Julio Iglesias de traje señalando con gesto pícaro. Texto: Veo mal? O es... 2 de Julio",
@@ -84,59 +254,44 @@
     "to": 2
   },
   {
-    "id": "no-lo-ves-venir",
-    "file": "no-lo-ves-venir.webp",
-    "alt": "Julio Iglesias junto a Stevie Wonder. Texto: Cuando llega julio y no lo ves venir",
-    "from": 1,
-    "to": 7
-  },
-  {
-    "id": "frio-monumental",
-    "file": "frio-monumental.webp",
-    "alt": "Julio Iglesias con camiseta de River Plate en el estadio Monumental nevado. Texto: Llega Julio con un frío monumental",
-    "from": 1,
-    "to": 31
-  },
-  {
-    "id": "cayo-julio",
-    "file": "cayo-julio.webp",
-    "alt": "Julio Iglesias caído en el piso siendo ayudado por una señora. Texto: Cayó Julio nomás...",
-    "from": 1,
-    "to": 31
-  },
-  {
-    "id": "julio-desde-martes",
-    "file": "julio-desde-martes.webp",
-    "alt": "Julio Iglesias como astronauta en Marte rodeado de aliens. Texto: Julio llegará desde Martes",
-    "from": 1,
-    "to": 1,
-    "weekday": 2
-  },
-  {
-    "id": "bajas-temperaturas",
-    "file": "bajas-temperaturas.webp",
-    "alt": "Julio Iglesias con campera de nieve bajo una tormenta. Texto: Se anuncian bajas temperaturas para Julio",
-    "from": 1,
-    "to": 31
-  },
-  {
-    "id": "julio-lleno-de-bendiciones",
-    "file": "julio-lleno-de-bendiciones.webp",
-    "alt": "Julio Iglesias rodeado de muchos bebés generado por IA. Texto: Te deseo un Julio lleno de bendiciones",
-    "from": 1,
-    "to": 31
-  },
-  {
-    "id": "uno-de-julio-uno",
-    "file": "uno-de-julio-uno.webp",
-    "alt": "Julio Iglesias con cartas del juego UNO. Texto: El UNO de Julio",
-    "from": 1,
-    "to": 1
-  },
-  {
     "id": "3d-julio",
     "file": "3d-julio.webp",
     "alt": "Julio Iglesias con gafas 3D. Texto: Hoy es 3D Julio",
+    "from": 3,
+    "to": 3
+  },
+  {
+    "id": "3d-julio-cine",
+    "file": "3d-julio-cine.webp",
+    "alt": "Julio Iglesias en el cine con lentes 3D comiendo pochoclos. Texto: 3D JULIO",
+    "from": 3,
+    "to": 3
+  },
+  {
+    "id": "3d-julio-impresora",
+    "file": "3d-julio-impresora.webp",
+    "alt": "Julio Iglesias junto a una impresora 3D que esta imprimiendo una foto suya. Texto: 3D JULIO",
+    "from": 3,
+    "to": 3
+  },
+  {
+    "id": "3d-julio-minecraft",
+    "file": "3d-julio-minecraft.webp",
+    "alt": "Julio Iglesias como personaje de Minecraft con traje azul en estilo pixel art 3D. Texto: 3D JULIO",
+    "from": 3,
+    "to": 3
+  },
+  {
+    "id": "3d-julio-vr",
+    "file": "3d-julio-vr.webp",
+    "alt": "Julio Iglesias con casco de realidad virtual PlayStation VR aplaudiendo. Texto: Que tengan un feliz.. 3D Julio",
+    "from": 3,
+    "to": 3
+  },
+  {
+    "id": "3ds-julio-snack",
+    "file": "3ds-julio-snack.webp",
+    "alt": "Paquete de snacks 3Ds sabor queso con las caras de Julio Iglesias en los conos. Texto: 3D's JULIO",
     "from": 3,
     "to": 3
   },
@@ -148,6 +303,41 @@
     "to": 3
   },
   {
+    "id": "estres-de-julio",
+    "file": "estres-de-julio.webp",
+    "alt": "Julio Iglesias estresado en una oficina rodeado de pilas de papeles. Texto: ESTRES DE JULIO",
+    "from": 3,
+    "to": 3
+  },
+  {
+    "id": "llego-julio-tercero",
+    "file": "llego-julio-tercero.webp",
+    "alt": "Julio Iglesias corriendo en una pista de atletismo en tercer lugar. Texto: LLEGO JULIO 3RO",
+    "from": 3,
+    "to": 3
+  },
+  {
+    "id": "t-rex-de-julio",
+    "file": "t-rex-de-julio.webp",
+    "alt": "Julio Iglesias parado junto a un dinosaurio T-Rex en la nieve. Texto: Hoy es T-REX de Julio",
+    "from": 3,
+    "to": 3
+  },
+  {
+    "id": "the-tree-of-julio",
+    "file": "the-tree-of-julio.webp",
+    "alt": "Julio Iglesias abrazado a un arbol grande. Texto: THE TREE OF JULY",
+    "from": 3,
+    "to": 3
+  },
+  {
+    "id": "tres-de-julio-miseria",
+    "file": "tres-de-julio-miseria.webp",
+    "alt": "Julio Iglesias asomado desde un auto con gesto picaro. Texto: Sabes que dia es hoy? 3 de Julio Que miseria!!!",
+    "from": 3,
+    "to": 3
+  },
+  {
     "id": "4-de-julio",
     "file": "4-de-julio.webp",
     "alt": "Julio Iglesias haciendo yoga en pose de árbol frente a un policía. Texto: El 4 de Julio",
@@ -155,11 +345,137 @@
     "to": 4
   },
   {
+    "id": "4-de-julio-uncle-sam",
+    "file": "4-de-julio-uncle-sam.webp",
+    "alt": "Julio Iglesias como Uncle Sam con sombrero de estrellas senalando al espectador. Texto: 4 DE JULIO",
+    "from": 4,
+    "to": 4
+  },
+  {
+    "id": "4d-julio-tesseract",
+    "file": "4d-julio-tesseract.webp",
+    "alt": "Julio Iglesias atrapado dentro de un tesseracto (cubo 4D) con efecto neon. Texto: 4 D JULIO. Screenshot de tweet de capitanfla diciendo Mi obra maestra",
+    "from": 4,
+    "to": 4
+  },
+  {
+    "id": "fantastico-4-de-julio",
+    "file": "fantastico-4-de-julio.webp",
+    "alt": "Julio Iglesias como miembro de los 4 Fantasticos de Marvel con traje de Human Torch. Texto: FANTASTICO 4 de Julio",
+    "from": 4,
+    "to": 4
+  },
+  {
+    "id": "mas-4-de-julio-uno",
+    "file": "mas-4-de-julio-uno.webp",
+    "alt": "Julio Iglesias sonriendo con una carta +4 del juego UNO. Sin texto explicito",
+    "from": 4,
+    "to": 4
+  },
+  {
+    "id": "the-ford-of-julio",
+    "file": "the-ford-of-julio.webp",
+    "alt": "Julio Iglesias junto a una camioneta Ford F-150 con fuegos artificiales y bandera de EEUU. Texto: TODAY IS THE FORD OF JULY",
+    "from": 4,
+    "to": 4
+  },
+  {
+    "id": "5-de-julio-futbol-5",
+    "file": "5-de-julio-futbol-5.webp",
+    "alt": "Julio Iglesias en una cancha de futbol 5 indoor. Texto: EL 5 DE JULIO",
+    "from": 5,
+    "to": 5
+  },
+  {
+    "id": "5-de-julio-speed-racer",
+    "file": "5-de-julio-speed-racer.webp",
+    "alt": "Julio Iglesias como Meteoro (Speed Racer) con el auto Mach 5. Texto: EL 5 DE JULIO",
+    "from": 5,
+    "to": 5
+  },
+  {
+    "id": "julio-five-jackson",
+    "file": "julio-five-jackson.webp",
+    "alt": "Julio Iglesias como los Jackson 5 en foto grupal con peinados afro. Texto: 5 DE JULIO. Logo: Julio 5ive",
+    "from": 5,
+    "to": 5
+  },
+  {
     "id": "venga-ese-5",
     "file": "venga-ese-5.webp",
     "alt": "Julio Iglesias chocando los cinco bailando. Texto: Venga ese 5 de Julio",
     "from": 5,
     "to": 5
+  },
+  {
+    "id": "el-cesto-de-julio",
+    "file": "el-cesto-de-julio.webp",
+    "alt": "Hombre con cara similar a Julio Iglesias sosteniendo un cesto de ropa sucia. Texto: El cesto de Julio",
+    "from": 6,
+    "to": 6
+  },
+  {
+    "id": "el-sexto-de-julio-canasto",
+    "file": "el-sexto-de-julio-canasto.webp",
+    "alt": "Julio Iglesias sonriendo sosteniendo un canasto de mimbre. Texto: EL 6to. DE JULIO",
+    "from": 6,
+    "to": 6
+  },
+  {
+    "id": "el-six-de-julio",
+    "file": "el-six-de-julio.webp",
+    "alt": "Julio Iglesias con cuerpo musculoso de fisicoculturista mostrando abdominales six-pack. Texto: EL SIX DE JULIO",
+    "from": 6,
+    "to": 6
+  },
+  {
+    "id": "007-de-julio",
+    "file": "007-de-julio.webp",
+    "alt": "Julio Iglesias como James Bond en la clásica apertura 007. Texto: 007 de Julio",
+    "from": 7,
+    "to": 7
+  },
+  {
+    "id": "7-eleven-de-julio",
+    "file": "7-eleven-de-julio.webp",
+    "alt": "Julio Iglesias parado frente a una tienda 7-Eleven. Sin texto explicito",
+    "from": 7,
+    "to": 7
+  },
+  {
+    "id": "ahi-seven-julio",
+    "file": "ahi-seven-julio.webp",
+    "alt": "Julio Iglesias en una estacion de tren saludando con valija. Texto: AHI SEVEN!",
+    "from": 7,
+    "to": 7
+  },
+  {
+    "id": "julio-tiene-7-blancanieves",
+    "file": "julio-tiene-7-blancanieves.webp",
+    "alt": "Julio Iglesias como Blancanieves con los 7 enanitos de Disney. Texto: Julio tiene 7!",
+    "from": 7,
+    "to": 7
+  },
+  {
+    "id": "se-vende-seven-de-julio",
+    "file": "se-vende-seven-de-julio.webp",
+    "alt": "Meme Drake con Julio Iglesias. Rechaza: SE VENDE con Julio. Aprueba: SEVEN DE con Julio. Pun on se vende/seven de",
+    "from": 7,
+    "to": 7
+  },
+  {
+    "id": "septimo-dia-de-julio-cerati",
+    "file": "septimo-dia-de-julio-cerati.webp",
+    "alt": "Julio Iglesias cantando junto a Gustavo Cerati tocando la guitarra. Texto: (En) EL SEPTIMO DIA DE JULIO",
+    "from": 7,
+    "to": 7
+  },
+  {
+    "id": "sevens-days-julio-ring",
+    "file": "sevens-days-julio-ring.webp",
+    "alt": "Julio Iglesias como la nina de la pelicula The Ring con pelo largo y ropa mojada. Texto: SEVENS DAYS y lo sabes...",
+    "from": 7,
+    "to": 7
   },
   {
     "id": "siete-de-julio-7up",
@@ -183,18 +499,102 @@
     "to": 7
   },
   {
-    "id": "007-de-julio",
-    "file": "007-de-julio.webp",
-    "alt": "Julio Iglesias como James Bond en la clásica apertura 007. Texto: 007 de Julio",
-    "from": 7,
-    "to": 7
+    "id": "8-bits-de-julio",
+    "file": "8-bits-de-julio.webp",
+    "alt": "Julio Iglesias en pixel art estilo 8-bit retro con fondo celeste. Texto: 8 BITS DE JULIO",
+    "from": 8,
+    "to": 8
   },
   {
-    "id": "diez-de-julio-maradona",
-    "file": "diez-de-julio-maradona.webp",
-    "alt": "Julio Iglesias abrazado con Diego Maradona jóvenes. Texto: El 10 de Julio",
-    "from": 10,
-    "to": 10
+    "id": "el-8-de-julio-scalextric",
+    "file": "el-8-de-julio-scalextric.webp",
+    "alt": "Julio Iglesias jugando con una pista de autos Scalextric en forma de 8 acostado en el piso. Texto: EL 8 DE JULIO",
+    "from": 8,
+    "to": 8
+  },
+  {
+    "id": "este-8-de-julio-billar",
+    "file": "este-8-de-julio-billar.webp",
+    "alt": "Julio Iglesias jugando al billar apuntando con el taco. Texto: Este 8 de Julio no sera complicado",
+    "from": 8,
+    "to": 8
+  },
+  {
+    "id": "julio-del-8-chavo",
+    "file": "julio-del-8-chavo.webp",
+    "alt": "El Chavo del 8 con cara de Julio Iglesias siendo regañado por Don Ramon. Texto: TENIA QUE SER EL JULIO DEL 8!",
+    "from": 8,
+    "to": 8
+  },
+  {
+    "id": "julio-simpsons-octillizos",
+    "file": "julio-simpsons-octillizos.webp",
+    "alt": "Escena de Los Simpsons de Apu con los octillizos pero con caras de Julio Iglesias en los bebes",
+    "from": 8,
+    "to": 8
+  },
+  {
+    "id": "ocho-infinito-de-julio",
+    "file": "ocho-infinito-de-julio.webp",
+    "alt": "Julio Iglesias en meme tipo Drake. Arriba riendo con un 8 rojo. Abajo sofisticado con un infinito rojo acostado. Pun on 8 = infinito acostado",
+    "from": 8,
+    "to": 8
+  },
+  {
+    "id": "pinocho-de-julio",
+    "file": "pinocho-de-julio.webp",
+    "alt": "Julio Iglesias como Pinocho de Disney en escena con Geppetto. Titulo: Disney PINOCHO De Julio",
+    "from": 8,
+    "to": 8
+  },
+  {
+    "id": "9-de-julio-avenida",
+    "file": "9-de-julio-avenida.webp",
+    "alt": "Avenida 9 de Julio en Buenos Aires con mural de Julio Iglesias en el edificio del Ministerio de Obras Publicas. Texto: 9 DE JULIO",
+    "from": 9,
+    "to": 9
+  },
+  {
+    "id": "9-de-julio-bizcochos",
+    "file": "9-de-julio-bizcochos.webp",
+    "alt": "Paquete de bizcochos 9 de Oro modificado a 9 DE JULIO con caras de Julio Iglesias en las galletitas. Texto: 9 DE JULIO Clasicos",
+    "from": 9,
+    "to": 9
+  },
+  {
+    "id": "9-de-julio-estacion",
+    "file": "9-de-julio-estacion.webp",
+    "alt": "Julio Iglesias senalando al espectador junto a un cartel de estacion de tren que dice 9 de Julio",
+    "from": 9,
+    "to": 9
+  },
+  {
+    "id": "julio-no-ve-no",
+    "file": "julio-no-ve-no.webp",
+    "alt": "Julio Iglesias en el oftalmologo con cara de enojo frente a tabla optometrica. Texto: JULIO NO VE NO",
+    "from": 9,
+    "to": 9
+  },
+  {
+    "id": "la-9-de-julio-pistola",
+    "file": "la-9-de-julio-pistola.webp",
+    "alt": "Julio Iglesias apuntando una pistola 9mm en una armeria. Texto: La 9 de julio",
+    "from": 9,
+    "to": 9
+  },
+  {
+    "id": "la-novena-de-julio",
+    "file": "la-novena-de-julio.webp",
+    "alt": "Julio Iglesias como Beethoven componiendo una sinfonía. Texto: La novena de Julio",
+    "from": 9,
+    "to": 9
+  },
+  {
+    "id": "nueve-de-julio-independencia",
+    "file": "nueve-de-julio-independencia.webp",
+    "alt": "Julio Iglesias vestido de gaucho con traje celeste y blanco frente a la Casa de Tucumán. Texto: El 9 de Julio",
+    "from": 9,
+    "to": 9
   },
   {
     "id": "diez-de-julio-examen",
@@ -204,11 +604,88 @@
     "to": 10
   },
   {
-    "id": "diez-y-siete-de-julio",
-    "file": "diez-y-siete-de-julio.webp",
-    "alt": "Julio Iglesias en selfie con Messi y Cristiano Ronaldo generado por IA. Texto: 10 y 7 de Julio",
-    "from": 17,
-    "to": 17
+    "id": "diez-de-julio-examen-ai",
+    "file": "diez-de-julio-examen-ai.webp",
+    "alt": "Julio Iglesias como profesor en un aula mostrando un examen con nota 10 generado por IA. Texto: El 10 de Julio",
+    "from": 10,
+    "to": 10
+  },
+  {
+    "id": "diez-de-julio-gimnasia",
+    "file": "diez-de-julio-gimnasia.webp",
+    "alt": "Julio Iglesias como gimnasta olímpico celebrando con un juez mostrando puntuación de 10. Texto: El 10 de Julio",
+    "from": 10,
+    "to": 10
+  },
+  {
+    "id": "diez-de-julio-maradona",
+    "file": "diez-de-julio-maradona.webp",
+    "alt": "Julio Iglesias abrazado con Diego Maradona jóvenes. Texto: El 10 de Julio",
+    "from": 10,
+    "to": 10
+  },
+  {
+    "id": "diez-de-julio-messi-abrazo",
+    "file": "diez-de-julio-messi-abrazo.webp",
+    "alt": "Julio Iglesias abrazando a Messi con la camiseta de la selección argentina. Texto: El 10 de Julio",
+    "from": 10,
+    "to": 10
+  },
+  {
+    "id": "diez-de-julio-strike-bowling",
+    "file": "diez-de-julio-strike-bowling.webp",
+    "alt": "Julio Iglesias celebrando un strike en una bolera con marcador mostrando 10 10 10. Sin texto overlay",
+    "from": 10,
+    "to": 10
+  },
+  {
+    "id": "diez-de-julio-vuelta-esquina",
+    "file": "diez-de-julio-vuelta-esquina.webp",
+    "alt": "Julio Iglesias abrazado con Maradona en una esquina. Texto: El 10 de Julio... está a la vuelta de la esquina!!",
+    "from": 10,
+    "to": 10
+  },
+  {
+    "id": "diezmo-de-julio",
+    "file": "diezmo-de-julio.webp",
+    "alt": "Julio Iglesias sosteniendo un plato de colecta con billetes de dólar. Texto: el Diezmo de JULIO",
+    "from": 10,
+    "to": 10
+  },
+  {
+    "id": "los-diez-mandamientos-de-julio",
+    "file": "los-diez-mandamientos-de-julio.webp",
+    "alt": "Julio Iglesias como Moisés con barba blanca sosteniendo las tablas de los diez mandamientos. Texto: Los 10 de Julio",
+    "from": 10,
+    "to": 10
+  },
+  {
+    "id": "primer-tercio-de-julio",
+    "file": "primer-tercio-de-julio.webp",
+    "alt": "Julio Iglesias mirando una botella de cerveza vacía con dos Heineken llenas al lado. Texto: Se ha terminado el primer tercio de Julio",
+    "from": 10,
+    "to": 10
+  },
+  {
+    "id": "x-de-julio-mapa-tesoro",
+    "file": "x-de-julio-mapa-tesoro.webp",
+    "alt": "Mapa del tesoro pirata con la cara de Julio Iglesias en la rosa de los vientos. Texto: X de Julio",
+    "from": 10,
+    "to": 10
+  },
+  {
+    "id": "x-de-julio-twitter",
+    "file": "x-de-julio-twitter.webp",
+    "alt": "Julio Iglesias señalando junto al logo de X (Twitter). Sin texto",
+    "from": 10,
+    "to": 10
+  },
+  {
+    "id": "eleven-de-julio-stranger-things",
+    "file": "eleven-de-julio-stranger-things.webp",
+    "alt": "Julio Iglesias como Eleven de Stranger Things con chaqueta azul y mirada seria. Texto: ELEVEN DE JULIO",
+    "from": 11,
+    "to": 11
   },
   {
     "id": "elon-cd-julio",
@@ -218,9 +695,58 @@
     "to": 11
   },
   {
+    "id": "julionce-beyonce",
+    "file": "julionce-beyonce.webp",
+    "alt": "Julio Iglesias con la cara superpuesta sobre Beyoncé. Texto: JULIONCE",
+    "from": 11,
+    "to": 11
+  },
+  {
+    "id": "once-de-julio-futbol",
+    "file": "once-de-julio-futbol.webp",
+    "alt": "Julio Iglesias con micrófono señalando una pizarra táctica de fútbol con formación de 11 jugadores. Texto: El once de Julio",
+    "from": 11,
+    "to": 11
+  },
+  {
+    "id": "once-de-julio-lineup",
+    "file": "once-de-julio-lineup.webp",
+    "alt": "Formación de fútbol con 11 jugadores todos llamados Julio en una app de lineup. Texto: El 11 de Julio. DT: Julio César Uribe",
+    "from": 11,
+    "to": 11
+  },
+  {
+    "id": "once-de-julio-windows",
+    "file": "once-de-julio-windows.webp",
+    "alt": "Julio Iglesias usando una computadora frente al logo de Windows 11. Texto: julio ya instaló el 11!",
+    "from": 11,
+    "to": 11
+  },
+  {
+    "id": "doce-cd-julio",
+    "file": "doce-cd-julio.webp",
+    "alt": "Álbum de doble CD de Julio Iglesias 'Mi Vida - Grandes Éxitos'. Texto: 2 CD Julio",
+    "from": 12,
+    "to": 12
+  },
+  {
+    "id": "doce-de-julio-boca",
+    "file": "doce-de-julio-boca.webp",
+    "alt": "Julio Iglesias en la tribuna de la Bombonera de Boca Juniors junto a una bandera con el número 12. Sin texto",
+    "from": 12,
+    "to": 12
+  },
+  {
     "id": "doce-de-julio-renault",
     "file": "doce-de-julio-renault.webp",
     "alt": "Julio Iglesias junto a un Renault 12 rojo. Texto: El 12 de Julio",
+    "from": 12,
+    "to": 12
+  },
+  {
+    "id": "doce-de-julio-renault-viejo",
+    "file": "doce-de-julio-renault-viejo.webp",
+    "alt": "Julio Iglesias sentado dentro de un Renault 12 rojo abandonado y oxidado. Texto: El 12 de Julio ha llegado a su fin.",
     "from": 12,
     "to": 12
   },
@@ -232,9 +758,93 @@
     "to": 12
   },
   {
-    "id": "quince-de-julio-vestido",
-    "file": "quince-de-julio-vestido.webp",
-    "alt": "Julio Iglesias vestido de quinceañera con vestido rosa y fuente. Texto: Hoy es el 15 de Julio",
+    "id": "dodge-de-julio",
+    "file": "dodge-de-julio.webp",
+    "alt": "Julio Iglesias sentado sobre un Dodge Challenger verde. Texto: Ya casi es el Dodge de Julio",
+    "from": 12,
+    "to": 12
+  },
+  {
+    "id": "estrese-de-julio",
+    "file": "estrese-de-julio.webp",
+    "alt": "Julio Iglesias estresado rodeado de manos con teléfonos y papeles. Texto: Hoy estrese de julio",
+    "from": 13,
+    "to": 13
+  },
+  {
+    "id": "faltan-dos-quincena-julio",
+    "file": "faltan-dos-quincena-julio.webp",
+    "alt": "Julio Iglesias haciendo cola en el banco con gente esperando. Texto: Faltan dos para la quincena de Julio",
+    "from": 13,
+    "to": 13
+  },
+  {
+    "id": "trece-cd-julio",
+    "file": "trece-cd-julio.webp",
+    "alt": "Julio Iglesias señalando junto a tres CDs de sus álbumes. Texto: 3 CD Julio",
+    "from": 13,
+    "to": 13
+  },
+  {
+    "id": "trece-de-julio-eltrece",
+    "file": "trece-de-julio-eltrece.webp",
+    "alt": "Julio Iglesias joven con traje blanco junto al logo del canal eltrece. Texto: El 13 de julio",
+    "from": 13,
+    "to": 13
+  },
+  {
+    "id": "trece-de-julio-jason",
+    "file": "trece-de-julio-jason.webp",
+    "alt": "Julio Iglesias sonriendo sosteniendo un machete y la máscara de hockey de Jason Voorhees. Texto: El 13 de Julio",
+    "from": 13,
+    "to": 13
+  },
+  {
+    "id": "f-14-de-julio-top-gun",
+    "file": "f-14-de-julio-top-gun.webp",
+    "alt": "Julio Iglesias como piloto de combate junto a un caza F-14 estilo Top Gun. Texto: F-14 de Julio y todavía despega",
+    "from": 14,
+    "to": 14
+  },
+  {
+    "id": "gato-thor-cd-julio",
+    "file": "gato-thor-cd-julio.webp",
+    "alt": "Un gato naranja, un vikingo con martillo (Thor), un CD, y Julio Iglesias. Rebus visual: ga-Thor-CD-Julio = catorce de Julio",
+    "from": 14,
+    "to": 14
+  },
+  {
+    "id": "ka-thor-cd-julio",
+    "file": "ka-thor-cd-julio.webp",
+    "alt": "Cuatro imágenes: Ford Ka, Thor con martillo, un CD, y Julio Iglesias. Rebus: Ka-Thor-CD-Julio = catorce de Julio",
+    "from": 14,
+    "to": 14
+  },
+  {
+    "id": "qatar-cd-julio",
+    "file": "qatar-cd-julio.webp",
+    "alt": "Mapa de Qatar y un CD junto a Julio Iglesias. Texto: Qatar CD Julio",
+    "from": 14,
+    "to": 14
+  },
+  {
+    "id": "ya-casi-la-mitad-de-julio",
+    "file": "ya-casi-la-mitad-de-julio.webp",
+    "alt": "Julio Iglesias señalando con ambas manos, imagen borrosa de cintura para abajo. Texto: Ya casi la mitad de Julio",
+    "from": 14,
+    "to": 15
+  },
+  {
+    "id": "esguince-de-julio-tobillo",
+    "file": "esguince-de-julio-tobillo.webp",
+    "alt": "Julio Iglesias con esguince de tobillo sentado en el piso agarrándose el pie de dolor. Texto: Esguince de Julio",
+    "from": 15,
+    "to": 15
+  },
+  {
+    "id": "esquince-de-julio-brazo",
+    "file": "esquince-de-julio-brazo.webp",
+    "alt": "Julio Iglesias con el brazo en cabestrillo y yeso. Texto: Esquince de Julio",
     "from": 15,
     "to": 15
   },
@@ -253,11 +863,46 @@
     "to": 15
   },
   {
-    "id": "se-viene-el-uno-y-dos",
-    "file": "se-viene-el-uno-y-dos.webp",
-    "alt": "Julio Iglesias en el baño, una imagen de pie y otra sentado. Texto: Se viene el UNO y DOS de Julio",
-    "from": 1,
-    "to": 2
+    "id": "quince-de-julio-ramo-rosa",
+    "file": "quince-de-julio-ramo-rosa.webp",
+    "alt": "Julio Iglesias como quinceañera con vestido rosa brillante y ramo de flores. Texto: 15 de Julio",
+    "from": 15,
+    "to": 15
+  },
+  {
+    "id": "quince-de-julio-torta",
+    "file": "quince-de-julio-torta.webp",
+    "alt": "Julio Iglesias como quinceañera con vestido rosa y plumas junto a una torta de 15 con texto: El 15 de Julio",
+    "from": 15,
+    "to": 15
+  },
+  {
+    "id": "quince-de-julio-vestido",
+    "file": "quince-de-julio-vestido.webp",
+    "alt": "Julio Iglesias vestido de quinceañera con vestido rosa y fuente. Texto: Hoy es el 15 de Julio",
+    "from": 15,
+    "to": 15
+  },
+  {
+    "id": "quince-de-julio-vestido-maniqui",
+    "file": "quince-de-julio-vestido-maniqui.webp",
+    "alt": "Julio Iglesias en bata junto a un maniquí con vestido de quinceañera rosa. Texto: En unos días es el 15 de Julio",
+    "from": 15,
+    "to": 15
+  },
+  {
+    "id": "falta-la-mitad-de-julio",
+    "file": "falta-la-mitad-de-julio.webp",
+    "alt": "Julio Iglesias como medio cuerpo robótico con piernas mecánicas en rehabilitación. Texto: Falta la mitad de Julio",
+    "from": 15,
+    "to": 16
+  },
+  {
+    "id": "mediados-de-julio-medias",
+    "file": "mediados-de-julio-medias.webp",
+    "alt": "Par de medias con estampado de Julio Iglesias. Texto: Mediados de Julio",
+    "from": 15,
+    "to": 16
   },
   {
     "id": "se-fue-la-mitad-de-julio",
@@ -267,11 +912,137 @@
     "to": 17
   },
   {
-    "id": "veintiuno-de-julio-blackjack",
-    "file": "veintiuno-de-julio-blackjack.webp",
-    "alt": "Julio Iglesias sosteniendo cartas J y A de blackjack. Texto: 21 de Julio",
-    "from": 21,
-    "to": 21
+    "id": "arreglando-quince-de-julio",
+    "file": "arreglando-quince-de-julio.webp",
+    "alt": "Personas limpiando un salón de fiestas con una niña de vestido rosa con escoba. Texto: Arreglando lo que dejó el 15 de Julio",
+    "from": 16,
+    "to": 16
+  },
+  {
+    "id": "cuatro-por-cuatro-de-julio",
+    "file": "cuatro-por-cuatro-de-julio.webp",
+    "alt": "Julio Iglesias manejando una camioneta 4x4 en el barro. Texto: 4x4 de Julio",
+    "from": 16,
+    "to": 16
+  },
+  {
+    "id": "dieciseis-de-julio-iphone",
+    "file": "dieciseis-de-julio-iphone.webp",
+    "alt": "Julio Iglesias mostrando un iPhone 16. Texto: El 16 de Julio",
+    "from": 16,
+    "to": 16
+  },
+  {
+    "id": "f-16-de-julio",
+    "file": "f-16-de-julio.webp",
+    "alt": "Julio Iglesias como piloto de combate junto a un caza F-16 Fighting Falcon. Texto: F-16 de Julio",
+    "from": 16,
+    "to": 16
+  },
+  {
+    "id": "julio-ya-tiene-16-vota",
+    "file": "julio-ya-tiene-16-vota.webp",
+    "alt": "Julio Iglesias votando en una urna electoral. Texto: Julio ya tiene 16!!!!",
+    "from": 16,
+    "to": 16
+  },
+  {
+    "id": "sweet-16-de-julio",
+    "file": "sweet-16-de-julio.webp",
+    "alt": "Julio Iglesias en vestido azul de fiesta rodeado de chicas en una fiesta Sweet 16. Texto: Sweet 16 de Julio",
+    "from": 16,
+    "to": 16
+  },
+  {
+    "id": "ya-paso-la-mitad-de-julio-portal",
+    "file": "ya-paso-la-mitad-de-julio-portal.webp",
+    "alt": "Julio Iglesias cayendo a través de un portal del videojuego Portal. Texto: Ya pasó la mitad de Julio",
+    "from": 16,
+    "to": 16
+  },
+  {
+    "id": "diecisiete-de-julio-colectivo",
+    "file": "diecisiete-de-julio-colectivo.webp",
+    "alt": "Julio Iglesias conduciendo un colectivo de Buenos Aires línea 17 Wilde-Recoleta. Texto: El 17 de Julio",
+    "from": 17,
+    "to": 17
+  },
+  {
+    "id": "diecisiete-otra-vez",
+    "file": "diecisiete-otra-vez.webp",
+    "alt": "Poster de la película '17 otra vez' con Julio Iglesias joven en lugar de Zac Efron. Texto: Julio Iglesias 17 otra vez",
+    "from": 17,
+    "to": 17
+  },
+  {
+    "id": "diez-y-siete-de-julio",
+    "file": "diez-y-siete-de-julio.webp",
+    "alt": "Julio Iglesias en selfie con Messi y Cristiano Ronaldo generado por IA. Texto: 10 y 7 de Julio",
+    "from": 17,
+    "to": 17
+  },
+  {
+    "id": "dieciocho-de-julio-chivas",
+    "file": "dieciocho-de-julio-chivas.webp",
+    "alt": "Julio Iglesias sosteniendo una botella de Chivas Regal 18. Texto: El 18 de Julio",
+    "from": 18,
+    "to": 18
+  },
+  {
+    "id": "julio-esta-madurando-banana",
+    "file": "julio-esta-madurando-banana.webp",
+    "alt": "Julio Iglesias disfrazado de banana colgando de un árbol de bananas. Texto: Julio está madurando, ya tiene 18",
+    "from": 18,
+    "to": 18
+  },
+  {
+    "id": "julio-ya-llego-a-18-bar",
+    "file": "julio-ya-llego-a-18-bar.webp",
+    "alt": "Julio Iglesias joven en un bar con una copa. Texto: Julio ya llegó a 18 Salud!",
+    "from": 18,
+    "to": 18
+  },
+  {
+    "id": "julio-ya-llego-a-18-supermercado",
+    "file": "julio-ya-llego-a-18-supermercado.webp",
+    "alt": "Julio Iglesias comprando botellas de alcohol en un supermercado. Texto: Julio ya llegó a 18",
+    "from": 18,
+    "to": 18
+  },
+  {
+    "id": "los-18-de-julio-golf",
+    "file": "los-18-de-julio-golf.webp",
+    "alt": "Julio Iglesias en un carrito de golf con una tarjeta de puntaje de 18 hoyos. Texto: Los 18 de Julio",
+    "from": 18,
+    "to": 18
+  },
+  {
+    "id": "ven-titeres-de-julio",
+    "file": "ven-titeres-de-julio.webp",
+    "alt": "Julio Iglesias rodeado de títeres de mano. Texto: Ven títeres de Julio",
+    "from": 20,
+    "to": 20
+  },
+  {
+    "id": "vente-de-julio-te",
+    "file": "vente-de-julio-te.webp",
+    "alt": "Taza de té con la cara de Julio Iglesias en la etiqueta del saquito y una mano invitando. Texto: Ven té de Julio",
+    "from": 20,
+    "to": 20
+  },
+  {
+    "id": "veintipico-de-julio-pato",
+    "file": "veintipico-de-julio-pato.webp",
+    "alt": "Julio Iglesias con un pico de pato amarillo en la cara. Texto: Veintipico de Julio",
+    "from": 20,
+    "to": 29
+  },
+  {
+    "id": "julio-dias-contados",
+    "file": "julio-dias-contados.webp",
+    "alt": "Julio Iglesias preso marcando rayas en la pared de una celda. Texto: Julio tiene los días contados",
+    "from": 20,
+    "to": 31
   },
   {
     "id": "julio-se-le-va-la-mano",
@@ -281,10 +1052,185 @@
     "to": 31
   },
   {
+    "id": "veintiuno-de-julio-blackjack",
+    "file": "veintiuno-de-julio-blackjack.webp",
+    "alt": "Julio Iglesias sosteniendo cartas J y A de blackjack. Texto: 21 de Julio",
+    "from": 21,
+    "to": 21
+  },
+  {
+    "id": "veintiuno-de-julio-blackjack-casino",
+    "file": "veintiuno-de-julio-blackjack-casino.webp",
+    "alt": "Julio Iglesias en un casino jugando al blackjack con cartas A y J (21). Texto: El 21 de Julio",
+    "from": 21,
+    "to": 21
+  },
+  {
+    "id": "xxi-de-julio-pantalon-grande",
+    "file": "xxi-de-julio-pantalon-grande.webp",
+    "alt": "Julio Iglesias sosteniendo un pantalón enorme talle XXL. Texto: XXI de Julio",
+    "from": 21,
+    "to": 21
+  },
+  {
+    "id": "veinte-3d-julio",
+    "file": "veinte-3d-julio.webp",
+    "alt": "Collage de 20 fotos de Julio Iglesias con efecto 3D anaglífico. Texto: Veinte 3D Julio",
+    "from": 23,
+    "to": 23
+  },
+  {
+    "id": "veintitres-de-julio-jordan",
+    "file": "veintitres-de-julio-jordan.webp",
+    "alt": "Julio Iglesias sentado junto a Michael Jordan sonriendo. Texto: El 23 de Julio",
+    "from": 23,
+    "to": 23
+  },
+  {
+    "id": "veinticuatro-de-julio-le-mans",
+    "file": "veinticuatro-de-julio-le-mans.webp",
+    "alt": "Julio Iglesias como piloto de Ferrari junto a un auto de carreras con el logo de las 24 horas de Le Mans. Texto: 24 de Julio",
+    "from": 24,
+    "to": 24
+  },
+  {
+    "id": "veinticuatro-de-julio-navidad",
+    "file": "veinticuatro-de-julio-navidad.webp",
+    "alt": "Julio Iglesias con sweater navideño junto a un árbol de Navidad. Texto: El 24 de Julio",
+    "from": 24,
+    "to": 24
+  },
+  {
+    "id": "veinticuatro-de-julio-serie-24",
+    "file": "veinticuatro-de-julio-serie-24.webp",
+    "alt": "Julio Iglesias como Jack Bauer en el poster de la serie 24 con una pistola. Texto: 24 (implícito: de Julio)",
+    "from": 24,
+    "to": 24
+  },
+  {
+    "id": "veinticuatro-siete-julio",
+    "file": "veinticuatro-siete-julio.webp",
+    "alt": "Julio Iglesias como empleado de un kiosco 24/7 con uniforme verde y rojo. Texto: implícito 24/7 de Julio",
+    "from": 24,
+    "to": 24
+  },
+  {
+    "id": "a-julio-solo-le-quedan-6",
+    "file": "a-julio-solo-le-quedan-6.webp",
+    "alt": "Julio Iglesias borracho tirado contra una pared con seis latas de cerveza Corona. Texto: A julio ya sólo le quedan 6",
+    "from": 25,
+    "to": 25
+  },
+  {
+    "id": "ya-vienen-los-25-de-julio",
+    "file": "ya-vienen-los-25-de-julio.webp",
+    "alt": "Julio Iglesias como un personaje tropical con sombrero y toalla. Texto: Ya vienen los 25 de Julio",
+    "from": 25,
+    "to": 25
+  },
+  {
     "id": "julio-entra-recta-final",
     "file": "julio-entra-recta-final.webp",
     "alt": "Julio Iglesias como jockey montando un caballo de carreras. Texto: Julio entra en la recta final",
     "from": 25,
+    "to": 31
+  },
+  {
+    "id": "julio-esta-terminando",
+    "file": "julio-esta-terminando.webp",
+    "alt": "Julio Iglesias sentado en un banco con una mujer de espaldas. Globo de texto: No eres tú... Soy yo. Texto: Julio está terminando",
+    "from": 25,
+    "to": 31
+  },
+  {
+    "id": "julio-se-nos-escapa-preso",
+    "file": "julio-se-nos-escapa-preso.webp",
+    "alt": "Julio Iglesias vestido de preso con traje a rayas escalando una soga para escapar. Texto: Julio se nos escapa",
+    "from": 25,
+    "to": 31
+  },
+  {
+    "id": "julio-ultimo-esfuerzo",
+    "file": "julio-ultimo-esfuerzo.webp",
+    "alt": "Julio Iglesias contando monedas junto a un chanchito alcancía. Texto: Julio hace el último esfuerzo para llegar a fin de mes",
+    "from": 25,
+    "to": 31
+  },
+  {
+    "id": "queda-la-cola-de-julio",
+    "file": "queda-la-cola-de-julio.webp",
+    "alt": "Julio Iglesias en una publicidad retro de Coca-Cola Light. Texto: Queda la Cola de Julio",
+    "from": 25,
+    "to": 31
+  },
+  {
+    "id": "26-de-julio-revolver",
+    "file": "26-de-julio-revolver.webp",
+    "alt": "Julio Iglesias con lentes de sol y un cigarrillo sosteniendo un revólver calibre 26. Texto: El 26 de Julio",
+    "from": 26,
+    "to": 26
+  },
+  {
+    "id": "el-26-llega-a-julio-colectivo",
+    "file": "el-26-llega-a-julio-colectivo.webp",
+    "alt": "Julio Iglesias esperando el colectivo línea 26 en una parada de Buenos Aires. Texto: El 26 llega a Julio",
+    "from": 26,
+    "to": 26
+  },
+  {
+    "id": "venti-seis-de-julio-starbucks",
+    "file": "venti-seis-de-julio-starbucks.webp",
+    "alt": "Julio Iglesias en Starbucks sosteniendo una bandeja con seis cafés tamaño Venti. Texto: Venti seis de Julio",
+    "from": 26,
+    "to": 26
+  },
+  {
+    "id": "finales-de-julio-examen",
+    "file": "finales-de-julio-examen.webp",
+    "alt": "Julio Iglesias como estudiante universitario rindiendo un examen final. Texto: Se vienen los finales de Julio!!!!!",
+    "from": 26,
+    "to": 31
+  },
+  {
+    "id": "faltan-4-para-que-pase-julio",
+    "file": "faltan-4-para-que-pase-julio.webp",
+    "alt": "Julio Iglesias haciendo fila detrás de jubilados. Texto: Faltan 4 para que pase Julio",
+    "from": 27,
+    "to": 27
+  },
+  {
+    "id": "solo-le-quedan-4-a-julio-dientes",
+    "file": "solo-le-quedan-4-a-julio-dientes.webp",
+    "alt": "Julio Iglesias desdentado sonriendo con solo 4 dientes. Texto: Ya solo le quedan 4 a Julio",
+    "from": 27,
+    "to": 27
+  },
+  {
+    "id": "a-julio-le-quedan-pocos-dias",
+    "file": "a-julio-le-quedan-pocos-dias.webp",
+    "alt": "Julio Iglesias como paciente en consultorio médico con un doctor. Texto: A Julio le quedan pocos días",
+    "from": 27,
+    "to": 31
+  },
+  {
+    "id": "se-extingue-julio-dinosaurio",
+    "file": "se-extingue-julio-dinosaurio.webp",
+    "alt": "Julio Iglesias como dinosaurio T-Rex rugiendo. Texto: Se extingue Julio",
+    "from": 27,
+    "to": 31
+  },
+  {
+    "id": "a-julio-le-llego-el-dia-28",
+    "file": "a-julio-le-llego-el-dia-28.webp",
+    "alt": "Julio Iglesias como mujer acostada con dolor menstrual. Texto: A Julio le llegó el día 28",
+    "from": 28,
+    "to": 28
+  },
+  {
+    "id": "estirar-a-julio-lo-mas-que-se-pueda",
+    "file": "estirar-a-julio-lo-mas-que-se-pueda.webp",
+    "alt": "Julio Iglesias siendo estirado en un potro medieval de tortura. Texto: Vamos a estirar a Julio lo más que se pueda",
+    "from": 28,
     "to": 31
   },
   {
@@ -293,6 +1239,132 @@
     "alt": "Julio Iglesias saludando al Rey Juan Carlos. Texto: Julio empieza a despedirse... y esta vez es real!",
     "from": 28,
     "to": 31
+  },
+  {
+    "id": "julio-nos-pego-duro-boxeo",
+    "file": "julio-nos-pego-duro-boxeo.webp",
+    "alt": "Julio Iglesias como boxeador lanzando un golpe en el ring. Texto: Hay que admitir que Julio nos pegó duro",
+    "from": 28,
+    "to": 31
+  },
+  {
+    "id": "julio-termina-con-dos-mangos",
+    "file": "julio-termina-con-dos-mangos.webp",
+    "alt": "Julio Iglesias sonriendo sosteniendo dos mangos. Texto: Julio termina con... dos mangos",
+    "from": 28,
+    "to": 31
+  },
+  {
+    "id": "julio-termina-su-mision",
+    "file": "julio-termina-su-mision.webp",
+    "alt": "Julio Iglesias vestido de misionero mormón caminando por la calle. Texto: Julio termina su misión",
+    "from": 28,
+    "to": 31
+  },
+  {
+    "id": "julio-ya-no-da-para-mas-ciclista",
+    "file": "julio-ya-no-da-para-mas-ciclista.webp",
+    "alt": "Julio Iglesias como ciclista exhausto tirado en el piso durante el Tour de France. Texto: Julio ya no da para más...",
+    "from": 28,
+    "to": 31
+  },
+  {
+    "id": "que-denso-julio-no-se-va-mas",
+    "file": "que-denso-julio-no-se-va-mas.webp",
+    "alt": "Julio Iglesias dormido en un sillón con gorro de fiesta después de una fiesta. Texto: Qué denso Julio, no se va más!!!",
+    "from": 28,
+    "to": 31
+  },
+  {
+    "id": "ya-de-julio-no-queda-nada-flaco",
+    "file": "ya-de-julio-no-queda-nada-flaco.webp",
+    "alt": "Julio Iglesias con cuerpo extremadamente delgado en la selva. Texto: Ya de julio no queda nada",
+    "from": 28,
+    "to": 31
+  },
+  {
+    "id": "dos-mas-y-me-voy-julio",
+    "file": "dos-mas-y-me-voy-julio.webp",
+    "alt": "Julio Iglesias en un bar con una cerveza levantando dos dedos. Texto: 2 más y me voy",
+    "from": 29,
+    "to": 29
+  },
+  {
+    "id": "noquis-de-julio-chef",
+    "file": "noquis-de-julio-chef.webp",
+    "alt": "Julio Iglesias como chef preparando ñoquis en una cocina. Texto: Es 29 y llegaron los ñoquis de Julio",
+    "from": 29,
+    "to": 29
+  },
+  {
+    "id": "noquis-de-julio-cocina",
+    "file": "noquis-de-julio-cocina.webp",
+    "alt": "Julio Iglesias sacando una fuente de ñoquis del horno en una cocina. Texto: Los ñoquis de Julio!",
+    "from": 29,
+    "to": 29
+  },
+  {
+    "id": "veintinueve-de-julio-noquis",
+    "file": "veintinueve-de-julio-noquis.webp",
+    "alt": "Julio Iglesias haciendo ñoquis a mano en una mesa con texto: SE VIENE EL 29 Y JULIO LO SABE",
+    "from": 29,
+    "to": 29
+  },
+  {
+    "id": "veintinueve-de-julio-noquis-sentado",
+    "file": "veintinueve-de-julio-noquis-sentado.webp",
+    "alt": "Julio Iglesias de traje sentado frente a dos platos de ñoquis. Texto: El 29 de Julio",
+    "from": 29,
+    "to": 29
+  },
+  {
+    "id": "julio-prepara-a-agostini",
+    "file": "julio-prepara-a-agostini.webp",
+    "alt": "Julio Iglesias como Rocky Balboa entrenando boxeo con otro Julio Iglesias como entrenador. Texto: Julio ya prepara a Agostini",
+    "from": 29,
+    "to": 31
+  },
+  {
+    "id": "julio-se-prepara-para-irse",
+    "file": "julio-se-prepara-para-irse.webp",
+    "alt": "Julio Iglesias preparando maletas en un hotel con dos mujeres. Texto: Julio se prepara para irse...",
+    "from": 29,
+    "to": 31
+  },
+  {
+    "id": "julio-se-prepara-para-partir",
+    "file": "julio-se-prepara-para-partir.webp",
+    "alt": "Julio Iglesias arrodillado cerrando una valija. Texto: Julio se prepara para partir...",
+    "from": 29,
+    "to": 31
+  },
+  {
+    "id": "a-julio-le-queda-uno",
+    "file": "a-julio-le-queda-uno.webp",
+    "alt": "Julio Iglesias jugando al UNO con jóvenes, sosteniendo una sola carta. Texto: A Julio le queda UNO",
+    "from": 30,
+    "to": 30
+  },
+  {
+    "id": "julio-30-seconds-to-mars",
+    "file": "julio-30-seconds-to-mars.webp",
+    "alt": "Julio Iglesias en el estilo de la portada de 30 Seconds to Mars, con la cara pintada de blanco. Texto: Julio 30 Seconds to Mars",
+    "from": 30,
+    "to": 30
+  },
+  {
+    "id": "julio-termina-dentro-de-un-dia",
+    "file": "julio-termina-dentro-de-un-dia.webp",
+    "alt": "Julio Iglesias en un supermercado Día. Texto: Julio termina dentro de un Día",
+    "from": 30,
+    "to": 30
+  },
+  {
+    "id": "treinta-de-julio-tracklist",
+    "file": "treinta-de-julio-tracklist.webp",
+    "alt": "Julio Iglesias señalando junto a una lista de 30 canciones. Texto: 30 de Julio",
+    "from": 30,
+    "to": 30
   },
   {
     "id": "despidiendo-julio",
@@ -305,6 +1377,13 @@
     "id": "facturas-de-julio",
     "file": "facturas-de-julio.webp",
     "alt": "Julio Iglesias como panadero con bandeja de facturas. Texto: No creas que todo terminó!! Ya llegan las facturas de Julio!!",
+    "from": 30,
+    "to": 31
+  },
+  {
+    "id": "le-queda-un-pelito-a-julio",
+    "file": "le-queda-un-pelito-a-julio.webp",
+    "alt": "Julio Iglesias calvo con un solo pelo rizado y un peine acercándose. Texto: Le queda un pelito a Julio",
     "from": 30,
     "to": 31
   },
@@ -323,45 +1402,17 @@
     "to": 31
   },
   {
-    "id": "empezamos-a-romper-huevos",
-    "file": "empezamos-a-romper-huevos.webp",
-    "alt": "Julio Iglesias cocinando con niños rompiendo huevos en un bowl. Texto: Empezamos a romper los huevos con Julio",
-    "from": 1,
-    "to": 5
-  },
-  {
-    "id": "julio-empieza-a-brillar",
-    "file": "julio-empieza-a-brillar.webp",
-    "alt": "Julio Iglesias cubierto de joyas y cadenas doradas brillando. Texto: Julio empieza a brillar",
-    "from": 1,
-    "to": 10
-  },
-  {
-    "id": "julio-termina-su-mision",
-    "file": "julio-termina-su-mision.webp",
-    "alt": "Julio Iglesias vestido de misionero mormón caminando por la calle. Texto: Julio termina su misión",
-    "from": 28,
+    "id": "ultima-cena-de-julio",
+    "file": "ultima-cena-de-julio.webp",
+    "alt": "Julio Iglesias como Jesús en La Última Cena de Leonardo da Vinci. Texto: Hoy es la última cena de Julio",
+    "from": 31,
     "to": 31
   },
   {
-    "id": "julio-esta-terminando",
-    "file": "julio-esta-terminando.webp",
-    "alt": "Julio Iglesias sentado en un banco con una mujer de espaldas. Globo de texto: No eres tú... Soy yo. Texto: Julio está terminando",
-    "from": 25,
-    "to": 31
-  },
-  {
-    "id": "julio-ultimo-esfuerzo",
-    "file": "julio-ultimo-esfuerzo.webp",
-    "alt": "Julio Iglesias contando monedas junto a un chanchito alcancía. Texto: Julio hace el último esfuerzo para llegar a fin de mes",
-    "from": 25,
-    "to": 31
-  },
-  {
-    "id": "julio-dias-contados",
-    "file": "julio-dias-contados.webp",
-    "alt": "Julio Iglesias preso marcando rayas en la pared de una celda. Texto: Julio tiene los días contados",
-    "from": 20,
+    "id": "ultimo-dia-de-julio-silla-electrica",
+    "file": "ultimo-dia-de-julio-silla-electrica.webp",
+    "alt": "Julio Iglesias atado a una silla eléctrica gritando en foto antigua en blanco y negro. Texto: El último día de Julio",
+    "from": 31,
     "to": 31
   }
 ]

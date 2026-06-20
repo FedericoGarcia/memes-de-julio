@@ -1,10 +1,17 @@
 [
   {
-    "id": "en-3-meses-llega-julio",
-    "file": "countdown/en-3-meses-llega-julio.webp",
-    "alt": "Ecografía con la cara de Julio Iglesias. Texto: En menos de 3 meses llega Julio",
+    "id": "ahi-viene",
+    "file": "countdown/ahi-viene.webp",
+    "alt": "Avalancha de caras de Julio Iglesias acercándose como tormenta de arena mientras alguien huye. Texto: Ahí viene",
     "minDays": 1,
-    "maxDays": 90
+    "maxDays": 30
+  },
+  {
+    "id": "bajas-temperaturas-sobretodo-julio",
+    "file": "countdown/bajas-temperaturas-sobretodo-julio.webp",
+    "alt": "Julio Iglesias probándose un sobretodo en una tienda de ropa. Texto: Anuncian bajas temperaturas, sobretodo... para Julio",
+    "minDays": 1,
+    "maxDays": 30
   },
   {
     "id": "cuanto-falta-para-julio",
@@ -14,37 +21,219 @@
     "maxDays": 365
   },
   {
-    "id": "julio-se-viene-con-todo",
-    "file": "countdown/julio-se-viene-con-todo.webp",
-    "alt": "Julio Iglesias en una bicicleta sobrecargada de equipaje. Texto: Julio se viene con todo",
+    "id": "en-3-meses-llega-julio",
+    "file": "countdown/en-3-meses-llega-julio.webp",
+    "alt": "Ecografía con la cara de Julio Iglesias. Texto: En menos de 3 meses llega Julio",
+    "minDays": 1,
+    "maxDays": 90
+  },
+  {
+    "id": "esperando-julio-con-ansiedad",
+    "file": "countdown/esperando-julio-con-ansiedad.webp",
+    "alt": "Julio Iglesias superpuesto en el personaje Alegría de Intensamente junto a Ansiedad. Texto: Esperando a Julio con ansiedad!!",
+    "minDays": 1,
+    "maxDays": 30
+  },
+  {
+    "id": "esta-llegando-julio-impresion",
+    "file": "countdown/esta-llegando-julio-impresion.webp",
+    "alt": "Julio Iglesias saliendo impreso de una impresora grande. Texto: Está llegando Julio o es mi impresión?",
+    "minDays": 1,
+    "maxDays": 30
+  },
+  {
+    "id": "falta-un-huevo-para-julio",
+    "file": "countdown/falta-un-huevo-para-julio.webp",
+    "alt": "Julio Iglesias con la mano en la cara y una docena de huevos con un espacio vacío. Texto: Falta un huevo para Julio...",
+    "minDays": 1,
+    "maxDays": 7
+  },
+  {
+    "id": "julio-a-punto-de-salir-del-horno",
+    "file": "countdown/julio-a-punto-de-salir-del-horno.webp",
+    "alt": "Julio Iglesias dentro de un horno eléctrico Oster. Texto: Julio está a punto de salir del horno",
+    "minDays": 1,
+    "maxDays": 7
+  },
+  {
+    "id": "julio-calentando-motores",
+    "file": "countdown/julio-calentando-motores.webp",
+    "alt": "Julio Iglesias revisando un motor de auto recalentado con vapor saliendo del capot. Texto: Julio va calentando motores",
+    "minDays": 1,
+    "maxDays": 15
+  },
+  {
+    "id": "julio-cargado-de-emociones",
+    "file": "countdown/julio-cargado-de-emociones.webp",
+    "alt": "Julio Iglesias empujando una carretilla con personajes de Intensamente. Texto: Julio viene cargado de emociones",
+    "minDays": 1,
+    "maxDays": 30
+  },
+  {
+    "id": "julio-empieza-en-un-dia",
+    "file": "countdown/julio-empieza-en-un-dia.webp",
+    "alt": "Julio Iglesias como empleado de supermercado Día con delantal rojo. Texto: Julio empieza en un Día",
+    "minDays": 1,
+    "maxDays": 3
+  },
+  {
+    "id": "julio-encima-tuki",
+    "file": "countdown/julio-encima-tuki.webp",
+    "alt": "Julio Iglesias abrazando a un hombre sentado con mate en una plaza. Texto: Arranca el año y cuando te queres acordar tuki tenes a julio encima",
+    "minDays": 1,
+    "maxDays": 30
+  },
+  {
+    "id": "julio-entrega-copa-del-mundo",
+    "file": "countdown/julio-entrega-copa-del-mundo.webp",
+    "alt": "Julio Iglesias como una figura celestial hecha de nubes sosteniendo la Copa del Mundo sobre el Estadio Ciudad de México con logo FIFA 2026. Texto: Gane quien gane Julio será quien entregue la Copa del Mundo",
+    "minDays": 1,
+    "maxDays": 30
+  },
+  {
+    "id": "julio-espera-paciente",
+    "file": "countdown/julio-espera-paciente.webp",
+    "alt": "Julio Iglesias vestido de médico con estetoscopio y bata blanca. Texto: Julio espera paciente",
     "minDays": 1,
     "maxDays": 60
   },
   {
-    "id": "ahi-viene",
-    "file": "countdown/ahi-viene.webp",
-    "alt": "Avalancha de caras de Julio Iglesias acercándose como tormenta de arena mientras alguien huye. Texto: Ahí viene",
+    "id": "julio-espera-su-turno",
+    "file": "countdown/julio-espera-su-turno.webp",
+    "alt": "Julio Iglesias sentado en la sala de espera de un consultorio médico entre otras personas. Texto: Julio espera su turno",
     "minDays": 1,
     "maxDays": 30
   },
   {
-    "id": "razones-julio",
-    "file": "countdown/razones-julio.webp",
-    "alt": "Gráfico de torta: razones por las que quiero que llegue Julio. 99% memes de Julio Iglesias, 1% vacaciones",
+    "id": "julio-esta-a-la-puerta",
+    "file": "countdown/julio-esta-a-la-puerta.webp",
+    "alt": "Julio Iglesias sentado en el escalón de una puerta esperando con una mochila. Texto: Julio está a la puerta",
+    "minDays": 1,
+    "maxDays": 7
+  },
+  {
+    "id": "julio-esta-cerca-pedidosya",
+    "file": "countdown/julio-esta-cerca-pedidosya.webp",
+    "alt": "Notificación de PedidosYa en celular mostrando: Llegando! Julio está cerca, 21:15-21:25",
+    "minDays": 1,
+    "maxDays": 7
+  },
+  {
+    "id": "julio-esta-cerquita",
+    "file": "countdown/julio-esta-cerquita.webp",
+    "alt": "Julio Iglesias asomándose detrás de una cerquita de madera en un parque. Texto: Ya Julio está cerquita",
+    "minDays": 1,
+    "maxDays": 15
+  },
+  {
+    "id": "julio-esta-demorado",
+    "file": "countdown/julio-esta-demorado.webp",
+    "alt": "Julio Iglesias con traje púrpura sonriendo. Texto: Julio está demorado",
+    "minDays": 1,
+    "maxDays": 30
+  },
+  {
+    "id": "julio-esta-por-volver",
+    "file": "countdown/julio-esta-por-volver.webp",
+    "alt": "Julio Iglesias joven en una TV retro Philco con el logo del canal Volver. Texto: Julio está por volver.",
+    "minDays": 1,
+    "maxDays": 30
+  },
+  {
+    "id": "julio-llega-a-toda-velocidad",
+    "file": "countdown/julio-llega-a-toda-velocidad.webp",
+    "alt": "Julio Iglesias piloteando un auto de Fórmula 1 Aston Martin en una pista. Texto: Julio llega a toda velocidad",
+    "minDays": 1,
+    "maxDays": 15
+  },
+  {
+    "id": "julio-llega-no-sera-el-mismo-ia",
+    "file": "countdown/julio-llega-no-sera-el-mismo-ia.webp",
+    "alt": "Julio Iglesias como robot de inteligencia artificial con cara mitad humana mitad metálica. Texto: Julio llega y no será el mismo... JULIA (JUL-IA)",
+    "minDays": 1,
+    "maxDays": 30
+  },
+  {
+    "id": "julio-mantenga-la-llama",
+    "file": "countdown/julio-mantenga-la-llama.webp",
+    "alt": "Julio Iglesias como doctor atendiendo a una llama en una camilla. Texto: Esperemos que Julio mantenga viva la llama",
     "minDays": 1,
     "maxDays": 365
   },
   {
-    "id": "nada-como-julio",
-    "file": "countdown/nada-como-julio.webp",
-    "alt": "Julio Iglesias en una pileta. Texto: Llega Junio, pero nada como Julio",
+    "id": "julio-muestra-sus-garras",
+    "file": "countdown/julio-muestra-sus-garras.webp",
+    "alt": "Julio Iglesias como Wolverine mostrando las garras con cuerpo musculoso. Texto: Julio ya muestra sus garras",
+    "minDays": 1,
+    "maxDays": 15
+  },
+  {
+    "id": "julio-no-llega-y-ya-en-las-redes",
+    "file": "countdown/julio-no-llega-y-ya-en-las-redes.webp",
+    "alt": "Julio Iglesias joven en un puerto tirando de una red de pesca. Texto: Julio no llega y ya está en las Redes",
     "minDays": 1,
     "maxDays": 30
   },
   {
-    "id": "ya-casi-se-ve-julio",
-    "file": "countdown/ya-casi-se-ve-julio.webp",
-    "alt": "Julio Iglesias borroso y desenfocado. Texto: Ya casi se ve Julio",
+    "id": "julio-no-puede-ocultarse",
+    "file": "countdown/julio-no-puede-ocultarse.webp",
+    "alt": "Julio Iglesias escondido detrás de un poste delgado en la calle de noche. Texto: Ya Julio no puede ocultarse",
+    "minDays": 1,
+    "maxDays": 7
+  },
+  {
+    "id": "julio-pisando-los-talones",
+    "file": "countdown/julio-pisando-los-talones.webp",
+    "alt": "Julio Iglesias pisándole los talones a un hombre asustado en la calle. Texto: Julio nos está pisando los talones",
+    "minDays": 1,
+    "maxDays": 15
+  },
+  {
+    "id": "julio-punto-de-arrancar",
+    "file": "countdown/julio-punto-de-arrancar.webp",
+    "alt": "Julio Iglesias joven junto a un auto retro en foto blanco y negro. Texto: Julio ya está a punto de arrancar",
+    "minDays": 1,
+    "maxDays": 7
+  },
+  {
+    "id": "julio-se-acerca-rapido",
+    "file": "countdown/julio-se-acerca-rapido.webp",
+    "alt": "Julio Iglesias como The Flash corriendo a super velocidad con rayos. Texto: Julio se está acercando muy rápido",
+    "minDays": 1,
+    "maxDays": 15
+  },
+  {
+    "id": "julio-se-asoma-a-lo-lejos",
+    "file": "countdown/julio-se-asoma-a-lo-lejos.webp",
+    "alt": "Julio Iglesias asomándose en el horizonte de una larga ruta recta en el desierto. Texto: Julio se asoma a lo lejos",
+    "minDays": 1,
+    "maxDays": 90
+  },
+  {
+    "id": "julio-se-asoma-con-copa",
+    "file": "countdown/julio-se-asoma-con-copa.webp",
+    "alt": "Julio Iglesias asomándose detrás del trofeo de la Copa del Mundo FIFA en un estadio. Texto: Se asoma Julio con la copa",
+    "minDays": 1,
+    "maxDays": 15
+  },
+  {
+    "id": "julio-se-asoma-pared",
+    "file": "countdown/julio-se-asoma-pared.webp",
+    "alt": "Julio Iglesias asomándose por encima de una pared de piedra señalando. Texto: Julio se asoma",
+    "minDays": 1,
+    "maxDays": 15
+  },
+  {
+    "id": "julio-se-avecina",
+    "file": "countdown/julio-se-avecina.webp",
+    "alt": "Julio Iglesias vestido de mujer con suéter rosa hablando con una vecina sobre una cerca. Texto: Nos sorprendió que Julio se avecina",
+    "minDays": 1,
+    "maxDays": 15
+  },
+  {
+    "id": "julio-se-viene-con-todo",
+    "file": "countdown/julio-se-viene-con-todo.webp",
+    "alt": "Julio Iglesias en una bicicleta sobrecargada de equipaje. Texto: Julio se viene con todo",
     "minDays": 1,
     "maxDays": 60
   },
@@ -56,25 +245,67 @@
     "maxDays": 30
   },
   {
-    "id": "julio-se-asoma-a-lo-lejos",
-    "file": "countdown/julio-se-asoma-a-lo-lejos.webp",
-    "alt": "Julio Iglesias asomándose en el horizonte de una larga ruta recta en el desierto. Texto: Julio se asoma a lo lejos",
-    "minDays": 1,
-    "maxDays": 90
-  },
-  {
-    "id": "julio-mantenga-la-llama",
-    "file": "countdown/julio-mantenga-la-llama.webp",
-    "alt": "Julio Iglesias como doctor atendiendo a una llama en una camilla. Texto: Esperemos que Julio mantenga viva la llama",
-    "minDays": 1,
-    "maxDays": 365
-  },
-  {
-    "id": "pronto-entrando-en-julio",
-    "file": "countdown/pronto-entrando-en-julio.webp",
-    "alt": "Julio Iglesias como paciente con un doctor poniéndose guantes. Texto: Pronto estaremos entrando en Julio",
+    "id": "julio-va-tomando-forma",
+    "file": "countdown/julio-va-tomando-forma.webp",
+    "alt": "Julio Iglesias musculoso en un gimnasio retro de los 80 con ropa de spandex púrpura y rosa levantando una mancuerna. Texto: Julio va tomando forma",
     "minDays": 1,
     "maxDays": 30
+  },
+  {
+    "id": "julio-viene-alocado",
+    "file": "countdown/julio-viene-alocado.webp",
+    "alt": "Julio Iglesias en pijama de rayas entre dos loqueros vestidos de blanco. Texto: Julio viene alocado",
+    "minDays": 1,
+    "maxDays": 15
+  },
+  {
+    "id": "julio-viene-bastante-helado",
+    "file": "countdown/julio-viene-bastante-helado.webp",
+    "alt": "Julio Iglesias con la cara dentro de un cono de helado de chocolate. Texto: Me confirmaron que Julio viene bastante helado",
+    "minDays": 1,
+    "maxDays": 30
+  },
+  {
+    "id": "julio-viene-con-el-hada",
+    "file": "countdown/julio-viene-con-el-hada.webp",
+    "alt": "Julio Iglesias junto a Campanita (Tinkerbell) en un campo helado. Texto: Julio viene con el hada",
+    "minDays": 1,
+    "maxDays": 15
+  },
+  {
+    "id": "julio-viene-con-fuerza-jedi",
+    "file": "countdown/julio-viene-con-fuerza-jedi.webp",
+    "alt": "Julio Iglesias como Jedi con sable de luz en el desierto de Tatooine. Texto: Julio viene con fuerza",
+    "minDays": 1,
+    "maxDays": 30
+  },
+  {
+    "id": "julio-viene-demasiado-rapido",
+    "file": "countdown/julio-viene-demasiado-rapido.webp",
+    "alt": "Julio Iglesias dentro de un auto siendo multado por un policía. Texto: Julio viene demasiado rápido",
+    "minDays": 1,
+    "maxDays": 15
+  },
+  {
+    "id": "julio-viene-lento-pero-con-seguridad",
+    "file": "countdown/julio-viene-lento-pero-con-seguridad.webp",
+    "alt": "Julio Iglesias caminando con muletas escoltado por guardaespaldas. Texto: Julio dice que viene lento, pero con seguridad",
+    "minDays": 1,
+    "maxDays": 60
+  },
+  {
+    "id": "julio-viene-volando",
+    "file": "countdown/julio-viene-volando.webp",
+    "alt": "Julio Iglesias como piloto de avión en la cabina con una copiloto. Texto: Julio viene volando",
+    "minDays": 1,
+    "maxDays": 30
+  },
+  {
+    "id": "julio-ya-esta-confirmado",
+    "file": "countdown/julio-ya-esta-confirmado.webp",
+    "alt": "Julio Iglesias recibiendo la confirmación de un obispo en una iglesia. Texto: Señoras y señores, julio ya está confirmado",
+    "minDays": 1,
+    "maxDays": 7
   },
   {
     "id": "la-previa-de-julio",
@@ -84,11 +315,18 @@
     "maxDays": 30
   },
   {
-    "id": "tratando-de-llegar-a-julio",
-    "file": "countdown/tratando-de-llegar-a-julio.webp",
-    "alt": "Fans intentando tocar a Julio Iglesias en un concierto. Texto: Tratando de llegar a Julio",
+    "id": "manana-toca-julio",
+    "file": "countdown/manana-toca-julio.webp",
+    "alt": "Julio Iglesias como rockero tocando una guitarra eléctrica en un escenario. Texto: Mañana toca Julio",
     "minDays": 1,
-    "maxDays": 60
+    "maxDays": 3
+  },
+  {
+    "id": "nada-como-julio",
+    "file": "countdown/nada-como-julio.webp",
+    "alt": "Julio Iglesias en una pileta. Texto: Llega Junio, pero nada como Julio",
+    "minDays": 1,
+    "maxDays": 30
   },
   {
     "id": "no-es-julio-pero-tiene-aire",
@@ -98,37 +336,9 @@
     "maxDays": 365
   },
   {
-    "id": "solo-falta-messi-julio",
-    "file": "countdown/solo-falta-messi-julio.webp",
-    "alt": "Dos fotos de Messi seguidas de Julio Iglesias. Texto: Solo falta (Messi Messi) para (Julio)",
-    "minDays": 1,
-    "maxDays": 30
-  },
-  {
-    "id": "pronto-cae-julio",
-    "file": "countdown/pronto-cae-julio.webp",
-    "alt": "Julio Iglesias colgando del borde de un precipicio en el Gran Cañón. Texto: Pronto cae Julio",
-    "minDays": 1,
-    "maxDays": 60
-  },
-  {
-    "id": "julio-cargado-de-emociones",
-    "file": "countdown/julio-cargado-de-emociones.webp",
-    "alt": "Julio Iglesias empujando una carretilla con personajes de Intensamente. Texto: Julio viene cargado de emociones",
-    "minDays": 1,
-    "maxDays": 30
-  },
-  {
-    "id": "julio-esta-demorado",
-    "file": "countdown/julio-esta-demorado.webp",
-    "alt": "Julio Iglesias con traje púrpura sonriendo. Texto: Julio está demorado",
-    "minDays": 1,
-    "maxDays": 30
-  },
-  {
-    "id": "julio-punto-de-arrancar",
-    "file": "countdown/julio-punto-de-arrancar.webp",
-    "alt": "Julio Iglesias joven junto a un auto retro en foto blanco y negro. Texto: Julio ya está a punto de arrancar",
+    "id": "no-queda-nada-julio-estantes",
+    "file": "countdown/no-queda-nada-julio-estantes.webp",
+    "alt": "Julio Iglesias de blanco junto a estantes vacíos en un supermercado. Texto: No queda nada para Julio",
     "minDays": 1,
     "maxDays": 7
   },
@@ -140,10 +350,199 @@
     "maxDays": 7
   },
   {
-    "id": "esta-llegando-julio-impresion",
-    "file": "countdown/esta-llegando-julio-impresion.webp",
-    "alt": "Julio Iglesias saliendo impreso de una impresora grande. Texto: Está llegando Julio o es mi impresión?",
+    "id": "pronto-cae-julio",
+    "file": "countdown/pronto-cae-julio.webp",
+    "alt": "Julio Iglesias colgando del borde de un precipicio en el Gran Cañón. Texto: Pronto cae Julio",
+    "minDays": 1,
+    "maxDays": 60
+  },
+  {
+    "id": "pronto-comienza-el-periodo-de-julio",
+    "file": "countdown/pronto-comienza-el-periodo-de-julio.webp",
+    "alt": "Julio Iglesias con la cara en una toalla femenina. Texto: Pronto comienza el período de Julio",
+    "minDays": 1,
+    "maxDays": 15
+  },
+  {
+    "id": "pronto-entrando-en-julio",
+    "file": "countdown/pronto-entrando-en-julio.webp",
+    "alt": "Julio Iglesias como paciente con un doctor poniéndose guantes. Texto: Pronto estaremos entrando en Julio",
     "minDays": 1,
     "maxDays": 30
+  },
+  {
+    "id": "quesera-de-julio",
+    "file": "countdown/quesera-de-julio.webp",
+    "alt": "Julio Iglesias como quesero cortando queso en una quesería. Texto: Quesera de Julio?",
+    "minDays": 1,
+    "maxDays": 30
+  },
+  {
+    "id": "razones-julio",
+    "file": "countdown/razones-julio.webp",
+    "alt": "Gráfico de torta: razones por las que quiero que llegue Julio. 99% memes de Julio Iglesias, 1% vacaciones",
+    "minDays": 1,
+    "maxDays": 365
+  },
+  {
+    "id": "se-acerca-el-periodo-de-julio",
+    "file": "countdown/se-acerca-el-periodo-de-julio.webp",
+    "alt": "Julio Iglesias de esmoquin con brazos cruzados frente a un estante de toallas femeninas. Texto: Se acerca el periodo de Julio",
+    "minDays": 1,
+    "maxDays": 30
+  },
+  {
+    "id": "se-demora-el-uno-de-julio",
+    "file": "countdown/se-demora-el-uno-de-julio.webp",
+    "alt": "Julio Iglesias haciendo fila en un baño público de hombres esperando. Texto: Se demora el uno de Julio",
+    "minDays": 1,
+    "maxDays": 7
+  },
+  {
+    "id": "solo-falta-messi-julio",
+    "file": "countdown/solo-falta-messi-julio.webp",
+    "alt": "Dos fotos de Messi seguidas de Julio Iglesias. Texto: Solo falta (Messi Messi) para (Julio)",
+    "minDays": 1,
+    "maxDays": 30
+  },
+  {
+    "id": "subiendo-las-cosas-de-julio",
+    "file": "countdown/subiendo-las-cosas-de-julio.webp",
+    "alt": "Julio Iglesias y niños subiendo cajas etiquetadas JULIO por una escalera. Texto: Por aquí... se puede ir subiendo las cosas de Julio",
+    "minDays": 1,
+    "maxDays": 15
+  },
+  {
+    "id": "tratando-de-llegar-a-julio",
+    "file": "countdown/tratando-de-llegar-a-julio.webp",
+    "alt": "Fans intentando tocar a Julio Iglesias en un concierto. Texto: Tratando de llegar a Julio",
+    "minDays": 1,
+    "maxDays": 60
+  },
+  {
+    "id": "ultimo-paso-para-julio",
+    "file": "countdown/ultimo-paso-para-julio.webp",
+    "alt": "Julio Iglesias como astronauta bajando de un módulo lunar en la Luna. Texto: Último paso para Julio",
+    "minDays": 1,
+    "maxDays": 3
+  },
+  {
+    "id": "un-dia-para-julio",
+    "file": "countdown/un-dia-para-julio.webp",
+    "alt": "Julio Iglesias recibiendo las llaves de un supermercado Día. Texto: Un Día para Julio",
+    "minDays": 1,
+    "maxDays": 3
+  },
+  {
+    "id": "un-poco-mas-y-entra-julio",
+    "file": "countdown/un-poco-mas-y-entra-julio.webp",
+    "alt": "Julio Iglesias metido apretado dentro de una caja de madera con traje azul. Texto: Un poco más y entra Julio",
+    "minDays": 1,
+    "maxDays": 15
+  },
+  {
+    "id": "ya-casi-nos-toca-julio",
+    "file": "countdown/ya-casi-nos-toca-julio.webp",
+    "alt": "Julio Iglesias sentado junto a un piano de cola sonriendo. Texto: Ya casi nos toca Julio",
+    "minDays": 1,
+    "maxDays": 15
+  },
+  {
+    "id": "ya-casi-se-ve-julio",
+    "file": "countdown/ya-casi-se-ve-julio.webp",
+    "alt": "Julio Iglesias borroso y desenfocado. Texto: Ya casi se ve Julio",
+    "minDays": 1,
+    "maxDays": 60
+  },
+  {
+    "id": "ya-no-le-queda-nada-a-julio",
+    "file": "countdown/ya-no-le-queda-nada-a-julio.webp",
+    "alt": "Julio Iglesias con camisa muy ajustada y panza al aire. Texto: Ya no le queda nada a Julio",
+    "minDays": 1,
+    "maxDays": 7
+  },
+  {
+    "id": "ya-se-asoma-julio-parto",
+    "file": "countdown/ya-se-asoma-julio-parto.webp",
+    "alt": "Julio Iglesias como bebé asomándose durante un parto en un hospital. Texto: Ya se asoma Julio",
+    "minDays": 1,
+    "maxDays": 7
+  },
+  {
+    "id": "ya-se-asoma-julio-teatro",
+    "file": "countdown/ya-se-asoma-julio-teatro.webp",
+    "alt": "Julio Iglesias asomándose entre las cortinas rojas de un escenario de teatro. Texto: Ya se asoma Julio",
+    "minDays": 1,
+    "maxDays": 15
+  },
+  {
+    "id": "ya-vamos-a-cambiar-a-julio",
+    "file": "countdown/ya-vamos-a-cambiar-a-julio.webp",
+    "alt": "Julio Iglesias como bebé siendo cambiado el pañal, viene húmedo. Texto: Ya vamos a cambiar a Julio / Y viene húmedo",
+    "minDays": 1,
+    "maxDays": 7
+  },
+  {
+    "id": "julio-aun-no-visible-del-todo",
+    "file": "countdown/julio-aun-no-visible-del-todo.webp",
+    "alt": "Julio Iglesias invisible (solo cuerpo sin cabeza) junto a dos personas en un jardín. Texto: Julio aún no es visible del todo",
+    "minDays": 7,
+    "maxDays": 30
+  },
+  {
+    "id": "todavia-es-temprano-para-julio",
+    "file": "countdown/todavia-es-temprano-para-julio.webp",
+    "alt": "Julio Iglesias en la cama mirando un reloj despertador que marca las 5:30. Texto: Todavía es temprano para Julio",
+    "minDays": 15,
+    "maxDays": 90
+  },
+  {
+    "id": "parece-julio-pero-nuez",
+    "file": "countdown/parece-julio-pero-nuez.webp",
+    "alt": "Julio Iglesias joven sosteniendo una nuez gigante. Texto: Parece Julio, pero nuez...",
+    "minDays": 30,
+    "maxDays": 90
+  },
+  {
+    "id": "se-busca-julio-11-meses",
+    "file": "countdown/se-busca-julio-11-meses.webp",
+    "alt": "Perro clavando un cartel de Se Busca con la foto de Julio Iglesias en un árbol. Julio grita: No seas tan tóxico! He tardado tan solo 11 meses",
+    "minDays": 30,
+    "maxDays": 60
+  },
+  {
+    "id": "julio-espera-abril-lavigne",
+    "file": "countdown/julio-espera-abril-lavigne.webp",
+    "alt": "Julio Iglesias en un aeropuerto sosteniendo un cartel con el retrato de Avril Lavigne. Texto: Julio espera Abril",
+    "minDays": 60,
+    "maxDays": 120
+  },
+  {
+    "id": "julio-esta-por-abril",
+    "file": "countdown/julio-esta-por-abril.webp",
+    "alt": "Julio Iglesias entrando por una puerta de cristal de una oficina. Texto: Julio está por abril",
+    "minDays": 60,
+    "maxDays": 90
+  },
+  {
+    "id": "julio-va-en-la-mitad-de-abril",
+    "file": "countdown/julio-va-en-la-mitad-de-abril.webp",
+    "alt": "Julio Iglesias como pintor dibujando un retrato de Avril Lavigne a medio terminar. Texto: Julio va en la mitad de Abril",
+    "minDays": 60,
+    "maxDays": 90
+  },
+  {
+    "id": "parece-julio-pero-es-avril",
+    "file": "countdown/parece-julio-pero-es-avril.webp",
+    "alt": "Julio Iglesias con pelo largo rubio y mechas rosas estilo Avril Lavigne. Texto: Parece que es Julio, pero es Avril",
+    "minDays": 60,
+    "maxDays": 90
+  },
+  {
+    "id": "nueve-meses-para-que-llegue-julio",
+    "file": "countdown/nueve-meses-para-que-llegue-julio.webp",
+    "alt": "Caricatura de Julio Iglesias como espermatozoide rodeado de óvulos y espermatozoides. Texto: 9 meses para que llegue Julio",
+    "minDays": 240,
+    "maxDays": 300
   }
 ]
