@@ -36,9 +36,9 @@ jobs:
           # Minify CSS
           csso src/style.css -o _site/style.css
 
-          # Minify JSON
-          for f in memes.json countdown.json specials.json; do
-            python3 -c "import json,sys;json.dump(json.load(open('src/$f')),sys.stdout,separators=(',',':'))" > _site/$f
+          # Minify JSON catalogs
+          for f in src/catalogs/*.json; do
+            python3 -c "import json,sys;json.dump(json.load(open('$f')),sys.stdout,separators=(',',':'))" > _site/$(basename "$f")
           done
 
           # Copy static files as-is
