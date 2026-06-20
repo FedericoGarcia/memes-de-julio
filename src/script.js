@@ -148,13 +148,19 @@
     document.body.appendChild(overlay);
   }
 
+  function shuffleUrl() {
+    var dateParam = getParams().get("date");
+    if (dateParam) return window.location.pathname + "?date=" + encodeURIComponent(dateParam);
+    return window.location.pathname;
+  }
+
   function createShuffleBtn() {
     var btn = document.createElement("button");
     btn.className = "btn";
     btn.setAttribute("aria-label", "Cargar otra imagen al azar");
     btn.textContent = "🔀 Otra imagen";
     btn.addEventListener("click", function () {
-      window.location.href = window.location.pathname;
+      window.location.href = shuffleUrl();
     });
     return btn;
   }
@@ -187,21 +193,12 @@
     return fragment;
   }
 
-  function createActions(meme) {
+  function createActions(meme, title) {
     var actions = document.createElement("div");
     actions.className = "meme-actions";
     var shareUrl = window.location.origin + window.location.pathname + "?id=" + encodeURIComponent(meme.id);
     actions.appendChild(createShuffleBtn());
-    actions.appendChild(createShareBtns(shareUrl, "Memes de Julio"));
-    return actions;
-  }
-
-  function createGenericActions() {
-    var actions = document.createElement("div");
-    actions.className = "meme-actions";
-    var shareUrl = window.location.origin + window.location.pathname;
-    actions.appendChild(createShuffleBtn());
-    actions.appendChild(createShareBtns(shareUrl, "Memes de Julio — ¿cuánto falta?"));
+    actions.appendChild(createShareBtns(shareUrl, title || "Memes de Julio"));
     return actions;
   }
 
@@ -276,8 +273,9 @@
     div.className = "countdown-container";
 
     var available = filterCountdown(countdownCatalog, days);
-    if (available.length > 0) {
-      div.appendChild(createImage("images/" + pickRandom(available).file, available[0].alt, "countdown-image"));
+    var picked = available.length > 0 ? pickRandom(available) : null;
+    if (picked) {
+      div.appendChild(createImage("images/" + picked.file, picked.alt, "countdown-image"));
     } else {
       var emoji = document.createElement("div");
       emoji.className = "countdown-emoji";
@@ -298,7 +296,9 @@
     label.textContent = days === 1 ? "día para julio" : "días para julio";
     info.appendChild(label);
 
-    info.appendChild(createGenericActions());
+    if (picked) {
+      info.appendChild(createActions(picked, "Memes de Julio — ¿cuánto falta?"));
+    }
 
     div.appendChild(info);
     container.appendChild(div);
@@ -477,7 +477,7 @@
 
     if (state.type !== "gallery") {
       enableSwipe(content, function () {
-        window.location.href = window.location.pathname;
+        window.location.href = shuffleUrl();
       });
     }
   });
