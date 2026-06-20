@@ -81,20 +81,7 @@ cp "<source>" "src/images/<target>.webp"
 Add the entry to the appropriate JSON file. Validate with:
 
 ```bash
-python3 -c "
-import json
-ids = []
-for f in ['src/catalogs/memes.json','src/catalogs/countdown.json','src/catalogs/specials.json','src/catalogs/generic.json']:
-    data = json.load(open(f))
-    for item in data:
-        ids.append((item['id'], f))
-seen = {}
-for id, f in ids:
-    if id in seen:
-        print(f'DUPLICATE: {id} in {seen[id]} AND {f}')
-    seen[id] = f
-print(f'Total: {len(ids)} entries, no duplicates' if len(ids) == len(seen) else '')
-"
+python3 scripts/validate-catalogs.py
 ```
 
 ### Step 6 — Confirm
