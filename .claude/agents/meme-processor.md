@@ -1,6 +1,6 @@
 ---
 name: meme-processor
-description: Batch process meme images from the inbox. Use when the user wants to scan, triage, or bulk-load memes into the site catalogs. Handles 200+ images by working in batches, generating a triage report, and loading approved memes.
+description: Batch process meme images from the inbox. Use whenever there are multiple images to scan, triage, or load into the site catalogs — even a handful. Works in batches, generates a triage report, and loads approved memes.
 model: sonnet
 isolation: worktree
 background: true

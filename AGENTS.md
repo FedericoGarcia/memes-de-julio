@@ -114,7 +114,7 @@ GitHub Actions are pinned to commit SHAs. Dependabot keeps them updated.
 1. Drop raw images in `src/images/inbox/` (gitignored)
 2. Run `/scan-memes` to analyze, rename, and triage (or manually: `./scripts/convert-to-webp.sh`)
 3. Review the triage summary, then run `/add-meme <path>` for each approved image
-4. For bulk processing (200+ images), use the `meme-processor` agent
+4. For batch processing, use the `meme-processor` agent
 
 For manual workflow without skills:
 1. Run `./scripts/convert-to-webp.sh` to convert to WebP
@@ -131,7 +131,7 @@ For manual workflow without skills:
 
 ### Agents
 
-- `meme-processor` — Batch process 200+ memes from inbox. Two phases: scan (generates `triage-report.json`) then load (processes approved items). Runs in background with worktree isolation.
+- `meme-processor` — Batch process memes from inbox. Use whenever there are multiple images to process. Two phases: scan (generates `triage-report.json`) then load (processes approved items). Runs in background with worktree isolation.
 
 ## Infrastructure
 
