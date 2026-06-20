@@ -493,8 +493,6 @@
       return { type: "meme", meme: { file: "", alt: "Sin meme para hoy", id: "empty" }, day: day, year: year };
     }
 
-    if (month > JULY) return { type: "see-you" };
-
     return { type: "countdown", days: daysUntilJuly(now), catalog: catalogs.countdown };
   }
 
